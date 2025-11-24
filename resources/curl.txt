@@ -1,0 +1,19 @@
+-----------------------------------------------------
+########## Curl for bash & other terminals ##########
+-----------------------------------------------------
+
+curl --request POST \
+  --url https://kaya-mock-api-938786674786.us-central1.run.app/health-first/push-websocket-message \
+  --header 'Content-Type: application/json' \
+  --header 'accept: application/json' \
+  --data '{
+  "connection_id": "conn_123",
+  "message": "trigger",
+  "event_type": "confirmation"
+}'
+
+----------------------------------
+########## Curl for cmd ##########
+----------------------------------
+
+curl --request POST --url https://kaya-mock-api-938786674786.us-central1.run.app/health-first/push-websocket-message --header "Content-Type: application/json" --header "accept: application/json" --data "{\"connection_id\": \"conn_123\", \"message\": \"trigger\", \"event_type\": \"confirmation\"}"
