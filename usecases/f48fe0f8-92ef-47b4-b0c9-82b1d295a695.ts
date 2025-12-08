@@ -1,5 +1,5 @@
 //sharetext.io/2726b1f1
-https: localStorage.setItem(
+localStorage.setItem(
   "demo_f48fe0f8-92ef-47b4-b0c9-82b1d295a695",
   JSON.stringify([
     {
@@ -16,38 +16,14 @@ All text, numbers, and slide-level details have been extracted with full accurac
 Detected periods:
 - Previous Period → Q1 2023
 - Current Period → Q2 2023 
+
+> Awaiting Confirmation...
 `,
-      apiCalls: [
-        {
-          name: "sendEmail",
-          trigger: "after",
-          buttonId: "email",
-          response: "Human approval initiated Successfully",
-          method: "POST",
-          url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
-          headers: {
-            accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          bodyTemplate:
-            '{"subject":"Websocket Initiated","to":["sandaruwan@kayatech.com"],"content":"Websocket call initiated!"}',
-          waitingConfirmation: true,
-          waitingMessage: "Awaiting for Confirmation",
-          confirmationDelay: 10000,
-          confirmationTrigger: "websocket",
-          websocketUrl:
-            "wss://kaya-mock-api-938786674786.us-central1.run.app/health-first/websocket",
-          websocketEvent: "confirmation",
-          confirmationMessage: "Confirmation done",
-        },
-      ],
     },
     {
-      message: "Confirmation done",
+      message: "Confirm: Previous = Q1 2023, Current = Q2 2023.",
       response: `
-> Confirm: Previous = Q1 2023, Current = Q2 2023.
-
-### Supervisor Agent (Post-Confirmation) 
+### Supervisor Agent
 Period naming locked. Metric extraction, variance calculation, commitment tracking, drift identification, and verdict logic activated. 
 
 ### KPI Extraction & Snag-the-Numbers Agent
@@ -138,38 +114,14 @@ All slide content has been successfully ingested. KPI tables, commitment bullets
 Detected periods: 
 - Previous Period → Q4 2022 
 - Current Period → Q1 2023 
+
+> Awaiting Confirmation...
 `,
-      apiCalls: [
-        {
-          name: "sendEmail",
-          trigger: "after",
-          buttonId: "email",
-          response: "Human approval initiated Successfully",
-          method: "POST",
-          url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
-          headers: {
-            accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          bodyTemplate:
-            '{"subject":"Websocket Initiated","to":["sandaruwan@kayatech.com"],"content":"Websocket call initiated!"}',
-          waitingConfirmation: true,
-          waitingMessage: "Awaiting for Confirmation",
-          confirmationDelay: 10000,
-          confirmationTrigger: "websocket",
-          websocketUrl:
-            "wss://kaya-mock-api-938786674786.us-central1.run.app/health-first/websocket",
-          websocketEvent: "confirmation",
-          confirmationMessage: "Confirmation done 2",
-        },
-      ],
     },
     {
-      message: "Confirmation done 2",
+      message: "Confirm: Previous = Q4 2022, Current = Q1 2023",
       response: `
-> Confirm: Previous = Q4 2022, Current = Q1 2023.
-
-### Supervisor Agent (Post-Confirmation) 
+### Supervisor Agent
 Period names locked. Proceeding with KPI alignment, commitment analysis, drift assessment, and verdict determination. 
 
 ### Snag-the-Numbers Agent 
