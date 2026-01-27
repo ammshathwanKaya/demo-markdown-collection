@@ -1,4 +1,4 @@
-// https://sharetext.io/uwaw8bdp
+// https://sharetext.io/d5lmug12
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -240,14 +240,14 @@ style="border-radius:10px"
           },
           url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
           bodyTemplate: `{
-  "subject": "Legal HITL Review Required – AEM Webpage Compliance Status (US FTC)",
-  "to": ["ammshathwan@kayatech.com"],
+  "subject": "Legal Review Required – AEM Webpage Compliance Status (US FTC)",
+  "to": ["ammshathwan@kayatech.com" , "jason@kayatech.com"],
   "content": "<div style='background-color:#F3F4F6;padding:24px;font-family:Arial,Helvetica,sans-serif;'>\
   <table width='100%' cellpadding='0' cellspacing='0' style='max-width:700px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;'>\
     <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
       <p>Dear Vijayshankar,</p>\
       <p>The content for the following Adobe Experience Manager (AEM) webpage has completed all automated compliance, policy enforcement, and governance validations. The system has evaluated the page against U.S. FTC Advertising Guidelines, brand standards, and AEM publishing and access controls.</p>\
-      <p>You are now requested to perform a final Human-in-the-Loop (HITL) review and either approve the content for publication or flag any remaining issues.</p>\
+      <p>You are now requested to perform a final review and either approve the content for publication or flag any remaining issues.</p>\
       <p style='background-color:#FEF3C7;padding:12px;border-radius:6px;color:#92400E;'><strong>Note:</strong> All items below reflect system-validated results. Your role is to confirm and formally approve or reject the outcome, not to re-run compliance checks.</p>\
       <h3 style='margin-top:28px;border-bottom:1px solid #E5E7EB;padding-bottom:6px;'>Compliance Status Overview (US)</h3>\
       <p><strong>1. AEM-Specific Security Best Practices</strong></p>\
