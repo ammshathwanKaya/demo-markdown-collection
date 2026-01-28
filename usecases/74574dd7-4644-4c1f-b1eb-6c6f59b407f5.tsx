@@ -66,16 +66,34 @@ localStorage.setItem(
 
 > No clarification required.
 
-### Compliance checks performed at this stage:
-- Marketing positioning aligned to enterprise standards 
-- Claim categories reviewed against legal-approved patterns 
-- CTA and audience validated for public web use 
-- Jurisdiction scope confirmed (US) 
+#### Compliance & Policy Validation
 
-### Content configuration applied: 
-- Enterprise-professional tone enforced 
-- Claim phrasing constrained to approved language 
-- AEM component length limits applied 
+Compliance checks executed against approved enterprise marketing, legal, and platform standards prior to enabling content generation. 
+
+### Compliance Checks Executed
+
+- Marketing positioning validated against enterprise standards 
+- Claim categories validated against legal-approved claim frameworks 
+- CTA language and audience scope validated for public web use 
+- Jurisdiction scope validated and enforced (United States) 
+- AEM authoring constraints validated and applied 
+
+### Compliance Standards Applied
+| Compliance Standard                               | Scope                                      | Version | Authority                      |
+|-------------------------------------------------|--------------------------------------------|---------|--------------------------------|
+| Lenovo Enterprise Marketing Compliance Standards | Public-facing enterprise campaign content  | v4.0    | Lenovo Marketing Governance    |
+| FTC Advertising Guidelines                      | Performance claims, disclosures            | 2025    | U.S. Federal Trade Commission  |
+| Lenovo Brand Usage & Trademark Policy            | Naming conventions, trademark attribution  | v3.2    | Lenovo Legal                   |
+| AEM Public Content Publishing Policy             | Page eligibility and publishing controls   | v2.5    | Platform Governance            |
+| Lenovo Sustainability Claims Framework           | Environmental and sustainability language  | v1.8    | Legal & ESG Governance         |
+
+
+> Compliance rules were applied and matched prior to content materialization. 
+
+### Compliance Outcome Recorded
+- All applicable standards validated successfully 
+- Content approved for public enterprise publication 
+- Compliance validation recorded for HITL review and audit 
 
 ---
 
@@ -120,25 +138,61 @@ Generating web-ready content using the campaign PPT and linked datasheets as the
 - Headline: AI-Powered Productivity for the Modern Enterprise 
 - Sub-headline: ThinkPad X1 Carbon Gen 12 with Intel® Core™ Ultra 
 - CTA: Request a Demo 
-<div class="bg-blue-50 border border-blue-200 w-fit" style="border-radius:5px;"><div class="border-b border-blue-200" style="padding:16px;">Source validated from:</div><div style="padding:16px;"><ul class="list-disc m-0" style="padding:0 0 0 16px;"><li>Campaign PPT (primary positioning)</li><li>ThinkPad X1 Carbon Gen 11 enterprise campaign pages (layout & CTA pattern)</li><li>Lenovo product datasheets (naming & processor references)</li></ul></div></div>
 
 ### Value Propositions
 - AI-accelerated performance enabled by Intel® Core™ Ultra 
 - Enterprise-grade security with ThinkShield 
 - Ultra-light, sustainable design for hybrid work 
 - Built for large-scale IT deployment and management 
-<div class="bg-blue-50 border border-blue-200 w-fit" style="border-radius:5px;"><div class="border-b border-blue-200" style="padding:16px;">Source validated from:</div><div style="padding:16px;"><ul class="list-disc m-0" style="padding:0 0 0 16px;"><li>Campaign PPT and linked datasheets</li><li>Approved ThinkPad and P-Series enterprise product pages (terminology alignment)</li></ul></div></div>
 
 ### Product Highlights
 - Built-in AI engines for productivity and efficiency 
 - Long battery life with premium mobility 
 - Centralized enterprise IT manageability 
 - Lenovo sustainability commitments 
-<div class="bg-blue-50 border border-blue-200 w-fit" style="border-radius:5px;"><div class="border-b border-blue-200" style="padding:16px;">Source validated from:</div><div style="padding:16px;"><ul class="list-disc m-0" style="padding:0 0 0 16px;"><li>Campaign PPT (feature set)</li><li>Recent Lenovo enterprise laptop launches (structure & phrasing)</li><li>Lenovo ESG disclosures (sustainability language)</li></ul></div></div>
 
-<br/>
+#### Approved Content References Consulted 
 
-> Content bound to standard AEM component fields with reference lineage recorded.
+Content validation executed against active, pre-approved enterprise content references prior to content generation. 
+
+<table>
+  <thead>
+    <tr>
+      <th style="background:#bfdbfe">Reference Name</th>
+      <th style="background:#bfdbfe">Content Area</th>
+      <th style="background:#bfdbfe">Version</th>
+    </tr>
+  </thead>
+  <tbody style="background:#dbeafe">
+    <tr>
+      <td>ThinkPad X1 Carbon Gen 12 Campaign PPT</td>
+      <td>Core messaging, positioning, CTA</td>
+      <td>v1.0</td>
+    </tr>
+    <tr>
+      <td>ThinkPad X1 Carbon Gen 11 Enterprise Campaign Content</td>
+      <td>Hero layout, headline structure, CTA pattern</td>
+      <td>v1.2</td>
+    </tr>
+    <tr>
+      <td>Lenovo Enterprise Laptop Messaging Standards</td>
+      <td>Value proposition framing and terminology</td>
+      <td>v2.1</td>
+    </tr>
+    <tr>
+      <td>Lenovo Product Datasheets – ThinkPad X1 Series</td>
+      <td>Product naming, processor references</td>
+      <td>v3.0</td>
+    </tr>
+    <tr>
+      <td>Lenovo ESG & Sustainability Messaging Guidelines</td>
+      <td>Sustainability claims and phrasing</td>
+      <td>v2.0</td>
+    </tr>
+  </tbody>
+</table>
+
+Generated content was mapped to standard AEM components, with source references captured for audit and traceability. 
 
 ---
 
@@ -241,7 +295,7 @@ style="border-radius:10px"
           url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
           bodyTemplate: `{
   "subject": "Legal Review Required – AEM Webpage Compliance Status (US FTC)",
-  "to": ["ammshathwan@kayatech.com" , "jason@kayatech.com"],
+  "to": ["ammshathwan@kayatech.com", "jason@kayatech.com"],
   "content": "<div style='background-color:#F3F4F6;padding:24px;font-family:Arial,Helvetica,sans-serif;'>\
   <table width='100%' cellpadding='0' cellspacing='0' style='max-width:700px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;'>\
     <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
@@ -253,13 +307,13 @@ style="border-radius:10px"
       <p><strong>1. AEM-Specific Security Best Practices</strong></p>\
       <p style='margin-left:12px;'><span style='color:#16A34A;font-weight:bold;'>✔</span> Authorized publishing workflow enforced</p>\
       <p><strong>2. Claims & Brand Validation</strong></p>\
-      <ul style='margin-top:6px;list-style-type: none;'>\
+      <ul style='margin-top:6px;list-style-type: none;margin-left:0;padding-left:12px'>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Performance claims qualified with approved testing disclaimers</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Sustainability language aligned to legal-approved phrasing</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Intel® and trademark references validated for correct usage and attribution</li>\
       </ul>\
       <p><strong>3. Governance & Publishing Controls</strong></p>\
-      <ul style='margin-top:6px;list-style-type: none;'>\
+      <ul style='margin-top:6px;list-style-type: none;margin-left:0;padding-left:12px'>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Content approved for public-facing enterprise marketing classification</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Claims placement and scope verified</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Brand naming and terminology validated</li>\
@@ -370,9 +424,11 @@ style="border-radius:10px"
 
 #### FINAL OUTPUT
 
-**Adobe AEM Webpage Status:** 🟢 READY FOR PUBLISH
+**Downloadable Product Page Template (PDF):** 🟢 READY FOR PUBLISH
 
-[Generated Webpage (US Reference Outcome)](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-12-14-inch-intel/len101t0083?target=_blank)
+Generated Product Page Template (PD
+
+[Download PDF – Internal Preview](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-12-14-inch-intel/len101t0083?target=_blank)
 `,
     },
   ]),
