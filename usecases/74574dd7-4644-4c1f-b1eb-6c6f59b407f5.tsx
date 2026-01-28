@@ -1,4 +1,4 @@
-// https://sharetext.io/hwb5e7x8
+// https://sharetext.io/mf07xnlz
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -158,12 +158,12 @@ Content validation executed against active, pre-approved enterprise content refe
 <table>
   <thead>
     <tr>
-      <th style="background:#bfdbfe">Reference Name</th>
-      <th style="background:#bfdbfe">Content Area</th>
-      <th style="background:#bfdbfe">Version</th>
+      <th>Reference Name</th>
+      <th>Content Area</th>
+      <th>Version</th>
     </tr>
   </thead>
-  <tbody style="background:#dbeafe">
+  <tbody>
     <tr>
       <td>ThinkPad X1 Carbon Gen 12 Campaign PPT</td>
       <td>Core messaging, positioning, CTA</td>
@@ -294,14 +294,14 @@ style="border-radius:10px"
           },
           url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
           bodyTemplate: `{
-  "subject": "Legal Review Required – AEM Webpage Compliance Status (US FTC)",
+  "subject": "Legal Review Required – AEM Campaign Content Compliance Status (US FTC)",
   "to": ["ammshathwan@kayatech.com", "jason@kayatech.com"],
   "content": "<div style='background-color:#F3F4F6;padding:24px;font-family:Arial,Helvetica,sans-serif;'>\
   <table width='100%' cellpadding='0' cellspacing='0' style='max-width:700px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;'>\
     <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
       <p>Dear Vijayshankar,</p>\
-      <p>The content for the following Adobe Experience Manager (AEM) webpage has completed all automated compliance, policy enforcement, and governance validations. The system has evaluated the page against U.S. FTC Advertising Guidelines, brand standards, and AEM publishing and access controls.</p>\
-      <p>You are now requested to perform a final review and either approve the content for publication or flag any remaining issues.</p>\
+      <p>The content for the following Adobe Experience Manager (AEM) campaign output has completed all automated compliance, policy enforcement, and governance validations. The system has evaluated the content against U.S. FTC Advertising Guidelines, brand standards, and AEM publishing and access controls.</p>\
+      <p>You are now requested to perform a final Human-in-the-Loop (HITL) review and either approve the content for release or flag any remaining issues.</p>\
       <p style='background-color:#FEF3C7;padding:12px;border-radius:6px;color:#92400E;'><strong>Note:</strong> All items below reflect system-validated results. Your role is to confirm and formally approve or reject the outcome, not to re-run compliance checks.</p>\
       <h3 style='margin-top:28px;border-bottom:1px solid #E5E7EB;padding-bottom:6px;'>Compliance Status Overview (US)</h3>\
       <p><strong>1. AEM-Specific Security Best Practices</strong></p>\
@@ -320,7 +320,7 @@ style="border-radius:10px"
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Reused content reviewed and cleared</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Visual assets licensed and approved for marketing use</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Versioning, audit trail, and approval history confirmed</li>\
-        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Content reviewed and approved for public-facing enterprise marketing publication</li>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Content reviewed and cleared for public-facing enterprise marketing eligibility</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Reused content sourced from previously approved Lenovo enterprise campaigns with no material modifications</li>\
         <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Jurisdictional scope restricted to United States (FTC Advertising Guidelines)</li>\
       </ul>\
@@ -329,18 +329,24 @@ style="border-radius:10px"
       <ol style='padding-left:18px;list-style-type: none;'>\
         <li style='margin-bottom:16px;'>\
           <table cellpadding='0' cellspacing='0'>\
-            <tr><td>✅ Approve for Publication</td></tr>\
+            <tr><td>✅ Approve Content for Release</td></tr>\
           </table>\
         </li>\
         <li>\
           <table cellpadding='0' cellspacing='0'>\
-            <tr><td>❌ Flag for Remediation</td></tr>\
+            <tr><td>❌ Flag Content for Remediation</td></tr>\
           </table>\
         </li>\
       </ol>\
-      <h3 style='margin-top:28px;border-bottom:1px solid #E5E7EB;padding-bottom:6px;'>Webpage Details</h3>\
-      <p><strong>Page Name:</strong> [Auto-filled]<br/><strong>Campaign / Source Asset:</strong> [Auto-filled]<br/><strong>Case ID:</strong> [Auto-generated Case ID]<br/><strong>Submission Timestamp:</strong> [Auto-filled]</p>\
-      <p style='margin-top:20px;'>This confirmation will be recorded in the KAYA AI audit log as the final legal authorization checkpoint prior to publication.</p>\
+      <p><strong>Content & Artifact Details: </strong></p>\
+      <ul style='margin-top:6px;list-style-type: none;margin-left:0;padding-left:12px'>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Content Asset Name: [Auto-filled]</li>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Output Artifact(s): Campaign Product Page PDF (v1.0.0)</li>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Source Artifact: Campaign PPT</li>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Case ID: [Auto-generated Case ID]</li>\
+        <li><span style='color:#16A34A;font-weight:bold;'>✔</span> Submission Timestamp: [Auto-filled]</li>\
+      </ul>\
+      <p style='margin-top:20px;'>This confirmation will be recorded in the KAYA AI audit log as the final legal authorization checkpoint prior to content release and downstream publishing actions.</p>\
       <p style='margin-top:24px;'>Best regards,<br/><strong>KAYA AI Platform</strong></p>\
     </td></tr>\
   </table>\
