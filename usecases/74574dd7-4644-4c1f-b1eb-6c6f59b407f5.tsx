@@ -383,7 +383,7 @@ style="border-radius:10px"
 
 <br>
 
-> Generating the AEM webpage as an output artifact.
+> Generating the AEM-aligned campaign page layout and content structure as an output artifact.
 
 | Assembly Step | Status |
 |---------------|--------|
