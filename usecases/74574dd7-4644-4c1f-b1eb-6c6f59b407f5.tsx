@@ -1,4 +1,4 @@
-// https://sharetext.io/n1cn8l79
+// https://sharetext.io/cl59hv9c
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -295,7 +295,7 @@ style="border-radius:10px"
           url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
           bodyTemplate: `{
   "subject": "Legal Review Required – AEM Campaign Content Compliance Status (US FTC)",
-  "to": ["ammshathwan@kayatech.com", "jason@kayatech.com"],
+  "to": ["vijay@kayatech.com"],
   "content": "<div style='background-color:#F3F4F6;padding:24px;font-family:Arial,Helvetica,sans-serif;'>\
   <table width='100%' cellpadding='0' cellspacing='0' style='max-width:700px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;'>\
     <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
