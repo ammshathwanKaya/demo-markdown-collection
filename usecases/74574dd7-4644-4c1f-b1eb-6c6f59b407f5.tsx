@@ -1,4 +1,4 @@
-// https://sharetext.io/mf07xnlz
+// https://sharetext.io/5q8yqi0b
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -301,7 +301,7 @@ style="border-radius:10px"
     <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
       <p>Dear Vijayshankar,</p>\
       <p>The content for the following Adobe Experience Manager (AEM) campaign output has completed all automated compliance, policy enforcement, and governance validations. The system has evaluated the content against U.S. FTC Advertising Guidelines, brand standards, and AEM publishing and access controls.</p>\
-      <p>You are now requested to perform a final Human-in-the-Loop (HITL) review and either approve the content for release or flag any remaining issues.</p>\
+      <p>You are now requested to perform a final review and either approve the content for release or flag any remaining issues.</p>\
       <p style='background-color:#FEF3C7;padding:12px;border-radius:6px;color:#92400E;'><strong>Note:</strong> All items below reflect system-validated results. Your role is to confirm and formally approve or reject the outcome, not to re-run compliance checks.</p>\
       <h3 style='margin-top:28px;border-bottom:1px solid #E5E7EB;padding-bottom:6px;'>Compliance Status Overview (US)</h3>\
       <p><strong>1. AEM-Specific Security Best Practices</strong></p>\
