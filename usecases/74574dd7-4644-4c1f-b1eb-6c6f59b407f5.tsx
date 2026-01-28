@@ -1,4 +1,4 @@
-// https://sharetext.io/5q8yqi0b
+// https://sharetext.io/0kwz5rkm
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -432,7 +432,7 @@ style="border-radius:10px"
 
 **Downloadable Product Page Template (PDF):** 🟢 READY FOR PUBLISH
 
-Generated Product Page Template (PD
+Generated Product Page Template (PDF):
 
 [Download PDF – Internal Preview](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-12-14-inch-intel/len101t0083?target=_blank)
 `,
