@@ -209,7 +209,7 @@ Generated content was mapped to standard AEM components, with source references 
 <div class="flex flex-col gap-4">
 <div class="flex flex-col gap-2 w-fit">
 <div class="flex items-center gap-2">
-<span class="text-blue-500">●</span>
+<span>●</span>
 <span>Hero Image:</span>
 </div>
 
@@ -228,7 +228,7 @@ style="border-radius:10px"
 
 <div class="flex flex-col gap-2 w-fit">
 <div class="flex items-center gap-2">
-<span class="text-blue-500">●</span>
+<span>●</span>
 <span>Supporting Visuals:</span>
 </div>
 
@@ -260,7 +260,7 @@ style="border-radius:10px"
 </div>
 
 <div class="flex items-center gap-2">
-<span class="text-blue-500">●</span>
+<span>●</span>
 <span><b>Exclusions:</b> Consumer stock photography</span>
 </div>
 </div>
