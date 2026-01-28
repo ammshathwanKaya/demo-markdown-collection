@@ -1,4 +1,4 @@
-// https://sharetext.io/0kwz5rkm
+// https://sharetext.io/n1cn8l79
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
@@ -285,7 +285,7 @@ style="border-radius:10px"
       apiCalls: [
         {
           name: "sendEmail",
-          trigger: "after",
+          trigger: "before",
           buttonId: "email",
           method: "POST",
           headers: {
@@ -352,6 +352,23 @@ style="border-radius:10px"
   </table>\
   </div>"
 }`,
+          waitingMessage: "Awaiting Legal HITL Approval",
+          confirmationDelay: 10000,
+          confirmationTrigger: "websocket",
+          websocketUrl:
+            "wss://kaya-mock-api-938786674786.us-central1.run.app/health-first/websocket",
+          websocketEvent: "confirmation",
+          confirmationMessage: "HITL Approved 1",
+        },
+        {
+          name: "sendEmail",
+          trigger: "after",
+          buttonId: "email",
+          method: "POST",
+          headers: {
+            accept: "application/json",
+            "Content-Type": "application/json",
+          },
           waitingConfirmation: true,
           waitingMessage: "Awaiting Legal HITL Approval",
           confirmationDelay: 10000,
@@ -434,7 +451,7 @@ style="border-radius:10px"
 
 Generated Product Page Template (PDF):
 
-[Download PDF – Internal Preview](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-12-14-inch-intel/len101t0083?target=_blank)
+<a href="https://drive.google.com/uc?export=download&id=1CRLaxaME_Tv9mHltOTJ5WbvRPtrKdVPt" download="KYC_Summary_Report.pdf">Download PDF – Internal Preview</a>
 `,
     },
   ]),
