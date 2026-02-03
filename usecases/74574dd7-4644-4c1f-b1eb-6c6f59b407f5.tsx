@@ -1,22 +1,29 @@
-// https://sharetext.io/cl59hv9c
+// https://sharetext.io/s9lv0mt1
 
 localStorage.setItem(
   "demo_74574dd7-4644-4c1f-b1eb-6c6f59b407f5",
   JSON.stringify([
     {
-      message: "Convert this campaign PPT into an Adobe AEM webpage.",
+      message:
+        "Prepare this campaign PPT and linked product collateral so it can be used to generate a compliant Adobe AEM webpage.",
       response: `
+<h3 style="margin-bottom:6px;">Input Artifacts</h3> 
+<div class="flex items-center gap-3"><span>Campaign Deck:</span><span class="bg-blue-100 text-[13px]"  style="padding:4px 8px;border-radius:5px;">KAYA_AEM_PPT_to_AEM_Demo_Input_with_KB_Sources.pptx</span></div>
+
+---
+
 **🤖 Orchestrator Agent is thinking…**
 
 <br>
 
-> Campaign PPT received and validated as the primary source of intent and governance.
+> Campaign PPT received and validated as the authoritative system of intent, governance, and accountability.
 
-> Initializing PPT-to-AEM webpage generation workflow. 
+> Initializing the PPT-to-AEM Preparation Workflow, explicitly designed to eliminate the 80–90% of manual interpretation, coordination, and governance effort that typically occurs before and after Adobe AEM is used. 
 
 <h3 style="margin-bottom:6px;">Execution Mode:</h3> 
 
 <div class="flex items-center gap-3"><span class="bg-blue-100 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Deterministic</span> <span class="bg-blue-100 text-[13px]" style="padding:4px 8px;border-radius:5px;">Policy-aware</span> <span class="bg-blue-100 text-[13px]" style="padding:4px 8px;border-radius:5px;">HITL-enabled</span></div>
+
 
 **Case ID:** AEM-WEB-TPX1-GEN12-2024
 
@@ -26,22 +33,122 @@ localStorage.setItem(
 
 <br>
 
-> Verifying campaign deck completeness before any webpage generation. 
+> Verifying that the campaign deck contains all mandatory inputs required to prepare an AEM webpage
 
-| Validation Check             | Status     |
-|------------------------------|------------|
-| Campaign overview            | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Target audience & regions    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Value propositions           | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Product highlights           | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Brand & tone guidance        | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Compliance & legal notes     | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Jurisdictional risk matrix   | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
-| Datasheet & KB source links  | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">Present</span>  |
+### Campaign Readiness Validation
+| Validation Item                                   | Source | Status     |
+|--------------------------------------------------|--------|------------|
+| Campaign overview                                | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Target audience & regions                        | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Value propositions                               | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Product highlights                               | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Brand & tone guidance                            | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Compliance & legal notes                         | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Jurisdictional risk matrix                       | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Datasheet & KB source links                      | PPT    | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Present</span>  |
+| Substantiation reference for Performance claims  | PPT    | <span class="bg-red-100 text-red-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">X Missing</span>  |
 
-> All mandatory campaign inputs detected within the deck.
 
-> Proceeding to intent normalization.
+#### Outcome
+
+Gap detected.
+
+Performance claims present, substantiation reference missing. 
+
+<br>
+
+> Initiating KB Lookup
+
+---
+
+**🤖 Intake Agent continues…**
+
+<br>
+
+> Attempting to auto-resolve missing substantiation using approved Knowledge Bases.
+
+#### KBs Queried
+- Lenovo Enterprise Claims Substantiation KB 
+- Intel® Core™ Ultra Approved Benchmark KB 
+- Prior Approved Campaign Precedents (ThinkPad X1 Gen 11) 
+
+#### Outcome 
+- ⚠️ Partial match found 
+- Gen 11 substantiation exists 
+- Gen 12 substantiation not explicitly linked 
+
+> Initiating  Scoped HITL Trigger
+
+#### HITL Required — Marketing / Legal (Scoped) 
+
+> HITL Prompt Generated
+
+<br>
+
+The campaign includes AI performance claims without explicit substantiation reference. 
+
+### Marketing - Please confirm one of the following:
+1. Approved substantiation details  
+2. Approved phrasing that avoids substantiation requirement  
+3. Removal or softening of performance language
+
+> Waiting for Confirmation...
+`,
+    },
+    {
+      message: "1",
+      response: `
+Confirm if this is the relevant artefact for substantiation:
+
+<a href="https://drive.google.com/uc?export=download&id=163pmi_yM702suRqfRFDMWFd-9uuUB0JU" download="Intel® Core™ Ultra Performance Whitepaper – Rev 2024.pdf">Intel® Core™ Ultra Performance Whitepaper – Rev 2024.2</a>
+
+<br>
+
+> Waiting for Confirmation...
+      `,
+    },
+    {
+      message: "Confirmed",
+      response: `
+<h3 style="margin-bottom:6px;">Substantiation reference added to claims</h3> 
+
+<span>Legal - Please Confirm eligibility of proposed substantiation for Case  : <span class="text-blue-600 underline">AEM-PREP-TPX1-GEN12-2024</span></span>
+
+<br>
+
+> Waiting for Confirmation...
+`,
+    },
+    {
+      message: "Confirmed. Require Qualifier Language",
+      response: `
+#### Human Resolution Received — Marketing + Legal
+
+### System Actions
+- Substantiation reference bound to claims 
+- Qualifier requirement registered 
+- Audit trail updated 
+
+> Intake Validation Resumes
+
+---
+
+
+**🤖 Intake & Validation Agent is thinking…**
+
+### Re-running validation checks.
+| Validation Check | Status     |
+|------------------|------------|
+| Claim substantiation references | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Resolved</span> |
+| Campaign readiness              | <span class="bg-blue-100 text-blue-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Confirmed</span> |
+
+<br>
+
+> Campaign deemed AEM-preparable.
+
+> Proceeding to Intent Normalization.
+
+<br>
 
 ---
 
@@ -49,69 +156,97 @@ localStorage.setItem(
 
 <br>
 
-> Converting campaign language into machine-readable page intent.
-
-| Attribute           | Normalized Value                          |
-|---------------------|-------------------------------------------|
-| Campaign            | ThinkPad X1 Carbon Gen 12 – AI Productivity Launch |
-| Page Objective      | Enterprise product campaign webpage       |
-| Primary Goal        | Enterprise lead generation                |
-| Primary CTA         | Request a Demo                            |
-| Target Audience     | Enterprise IT Buyers, CIOs                |
-| Funnel Stage        | Consideration                             |
-| Target Regions      | United States                             |
-| Regulated Content   | Yes                                       |
-
-**Intent confidence score:** 0.94
-
-> No clarification required.
-
-#### Compliance & Policy Validation
-
-Compliance checks executed against approved enterprise marketing, legal, and platform standards prior to enabling content generation. 
-
-### Compliance Checks Executed
-
-- Marketing positioning validated against enterprise standards 
-- Claim categories validated against legal-approved claim frameworks 
-- CTA language and audience scope validated for public web use 
-- Jurisdiction scope validated and enforced (United States) 
-- AEM authoring constraints validated and applied 
-
-### Compliance Standards Applied
-| Compliance Standard                               | Scope                                      | Version | Authority                      |
-|-------------------------------------------------|--------------------------------------------|---------|--------------------------------|
-| Lenovo Enterprise Marketing Compliance Standards | Public-facing enterprise campaign content  | v4.0    | Lenovo Marketing Governance    |
-| FTC Advertising Guidelines                      | Performance claims, disclosures            | 2025    | U.S. Federal Trade Commission  |
-| Lenovo Brand Usage & Trademark Policy            | Naming conventions, trademark attribution  | v3.2    | Lenovo Legal                   |
-| AEM Public Content Publishing Policy             | Page eligibility and publishing controls   | v2.5    | Platform Governance            |
-| Lenovo Sustainability Claims Framework           | Environmental and sustainability language  | v1.8    | Legal & ESG Governance         |
-
-
-> Compliance rules were applied and matched prior to content materialization. 
-
-### Compliance Outcome Recorded
-- All applicable standards validated successfully 
-- Content approved for public enterprise publication 
-- Compliance validation recorded for HITL review and audit 
-
----
-
-**🤖 AEM Structure & Component Mapping Agent is thinking…**
+> Converting campaign language into machine-readable AEM preparation intent.
 
 <br>
 
-Determining how the webpage should be built based on intent — independent of any existing site instance.
+### Normalized Campaign Intent
+| Attribute                   | Normalized Value                               |
+|-----------------------------|-----------------------------------------------|
+| Campaign                    | ThinkPad X1 Carbon Gen 12 – AI Productivity Launch |
+| Intended Page Type          | Enterprise product campaign webpage            |
+| Primary Business Objective  | Enterprise lead generation                     |
+| Primary CTA                 | Request a Demo                                 |
+| Target Audience             | Enterprise IT Buyers, CIOs                     |
+| Funnel Stage                | Consideration                                  |
+| Intended Regions            | United States                                  |
+| Regulated Content           | Yes                                           |
 
-### Inputs considered:
-- Intent → AEM template mapping rules 
-- Lenovo enterprise design system 
-- Page outcomes defined in the campaign PPT 
+> Applies Intent Scoring Policy
 
-#### Selected AEM Page Structure
+<br>
 
-**Template:** Campaign Product Page
-| Order | AEM Component             |
+### Signals evaluated
+- Campaign objective 
+- CTA clarity 
+- Audience definition 
+- Funnel stage inference 
+- Region clarity 
+- Product specificity 
+- Regulatory signals 
+- Content coherence & consistency 
+
+### Scores
+- Raw intent score: 0.955 
+- Regulatory realism cap applied 
+- Final intent score: 0.94 
+- Coherence score: 0.90+ 
+
+### Decision
+- Intent ≥ 0.85 
+- Coherence ≥ 0.90 
+
+> No HITL triggered
+
+#### Pre-Authoring Compliance & Policy Validation
+
+> Shift-Left Governance
+
+> All compliance checks are executed before any AEM page, component, or content object is created. 
+
+<br>
+
+### Compliance Standards Applied
+| Standard                               | Scope                         | Version | Authority              |
+|----------------------------------------|-------------------------------|---------|------------------------|
+| Enterprise Marketing Compliance Standards | Public campaign content       | v4.0    | Marketing Governance   |
+| FTC Advertising Guidelines             | Performance claims & disclosures | 2025    | U.S. FTC               |
+| Brand Usage & Trademark Policy         | Naming & attribution          | v3.2    | Legal                  |
+| AEM Public Content Publishing Policy   | Page eligibility & controls   | v2.5    | Platform Governance    |
+| Sustainability Claims Framework        | ESG language                  | v1.8    | Legal & ESG            |
+
+### Compliance Checks Executed
+| Check                     | Result       |
+|---------------------------|--------------|
+| Marketing positioning     | <span class="bg-blue-100 text-blue-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Valid</span>     |
+| Claim category eligibility| <span class="bg-blue-100 text-blue-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Valid</span>      |
+| CTA audience scope        | <span class="bg-blue-100 text-blue-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Valid</span>      |
+| Jurisdiction enforcement  | <span class="bg-blue-100 text-blue-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ US applied</span>  |
+| AEM eligibility           | <span class="bg-green-100 text-green-600 text-[13px]"  style="padding:4px 8px;border-radius:5px;">✔ Approved</span>   |
+
+### Compliance Outcome
+- Campaign approved for public AEM preparation 
+- Compliance checkpoints registered for targeted HITL review 
+- Full audit trail initialized 
+
+---
+
+**🤖 AEM Structure & Component Preparation Agent is thinking…**
+<br>
+
+> Determining how the webpage should be constructed in AEM, without authoring or assembling anything inside AEM.
+
+<br>
+
+### Knowledge Bases Consulted
+| Knowledge Base                         | Purpose               | Version |
+|----------------------------------------|-----------------------|---------|
+| Intent → AEM Template Mapping KB       | Template selection    | v2.4    |
+| Enterprise Design System Rules         | Component constraints | v3.1    |
+| Campaign Page Patterns KB              | Section ordering      | v1.9    |
+
+### Prepared AEM Page Structure
+| Order | Approved Component        |
 |-------|---------------------------|
 | 1     | Hero                      |
 | 2     | Value Propositions        |
@@ -120,21 +255,27 @@ Determining how the webpage should be built based on intent — independent of a
 | 5     | FAQ                       |
 | 6     | Primary CTA Banner        |
 
-> Structure validated against enterprise design standards.
+<br>
 
-> No unsupported components introduced.
+> Structure validated against enterprise design standards. 
 
----
-
-**🤖 Content Materialization Agent is thinking…**
+> No unsupported components introduced. 
 
 <br>
 
-Generating web-ready content using the campaign PPT and linked datasheets as the primary inputs, with selective reference checks against previously approved Lenovo enterprise laptop pages. 
+---
 
-#### Generated Web Content (AEM-Aligned)
+**🤖 Content Preparation & Grounding Agent is thinking…**
 
-### Hero Section
+<br>
+
+> Preparing AEM-ready content inputs, grounded strictly in approved sources.
+
+<br>
+
+#### Prepared Content Blocks
+
+### Hero
 - Headline: AI-Powered Productivity for the Modern Enterprise 
 - Sub-headline: ThinkPad X1 Carbon Gen 12 with Intel® Core™ Ultra 
 - CTA: Request a Demo 
@@ -146,65 +287,43 @@ Generating web-ready content using the campaign PPT and linked datasheets as the
 - Built for large-scale IT deployment and management 
 
 ### Product Highlights
-- Built-in AI engines for productivity and efficiency 
+- Built-in AI engines for productivity 
 - Long battery life with premium mobility 
 - Centralized enterprise IT manageability 
-- Lenovo sustainability commitments 
+- Lenovo sustainability commitments
 
-#### Approved Content References Consulted 
-
-Content validation executed against active, pre-approved enterprise content references prior to content generation. 
-
-<table>
-  <thead>
-    <tr>
-      <th>Reference Name</th>
-      <th>Content Area</th>
-      <th>Version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ThinkPad X1 Carbon Gen 12 Campaign PPT</td>
-      <td>Core messaging, positioning, CTA</td>
-      <td>v1.0</td>
-    </tr>
-    <tr>
-      <td>ThinkPad X1 Carbon Gen 11 Enterprise Campaign Content</td>
-      <td>Hero layout, headline structure, CTA pattern</td>
-      <td>v1.2</td>
-    </tr>
-    <tr>
-      <td>Lenovo Enterprise Laptop Messaging Standards</td>
-      <td>Value proposition framing and terminology</td>
-      <td>v2.1</td>
-    </tr>
-    <tr>
-      <td>Lenovo Product Datasheets – ThinkPad X1 Series</td>
-      <td>Product naming, processor references</td>
-      <td>v3.0</td>
-    </tr>
-    <tr>
-      <td>Lenovo ESG & Sustainability Messaging Guidelines</td>
-      <td>Sustainability claims and phrasing</td>
-      <td>v2.0</td>
-    </tr>
-  </tbody>
-</table>
-
-Generated content was mapped to standard AEM components, with source references captured for audit and traceability. 
-
----
-
-**🤖 Asset Selection & Enrichment Agent is thinking…**
+### Content Sources Used
+| Source                         | Content Area            | Version |
+|--------------------------------|-------------------------|---------|
+| Campaign PPT                   | Messaging & CTA         | v1.0    |
+| Product Datasheets             | Technical facts         | v3.0    |
+| Enterprise Messaging Standards | Terminology             | v2.1    |
+| ESG Messaging Guidelines       | Sustainability claims   | v2.0    |
 
 <br>
 
-> Shortlisting visual assets based on campaign guidance and enterprise usage patterns.
+> All content blocks tagged with source references for auditability.
 
-<hr />
+<br>
 
-#### Campaign Visual Assets
+---
+
+**🤖 Asset Context Preparation Agent is thinking…**
+
+<br>
+
+> Defining asset usage context to guide DAM-based selection (no asset selection performed).
+
+<br>
+
+### Asset Context Rules
+| Page Section    | Asset Type                    | Allowed | Excluded                |
+|-----------------|-------------------------------|---------|-------------------------|
+| Hero            | Enterprise lifestyle imagery  | <span style='color:#16A34A;font-weight:bold;'>✔</span>       | Consumer stock          |
+| Highlights      | Product usage visuals         | <span style='color:#16A34A;font-weight:bold;'>✔</span>      | Generic marketing stock |
+| Sustainability  | ESG-approved visuals          | <span style='color:#16A34A;font-weight:bold;'>✔</span>       | Unlicensed imagery      |
+
+#### Image Placeholders 
 
 <div class="flex flex-col gap-4">
 <div class="flex flex-col gap-2 w-fit">
@@ -259,28 +378,18 @@ style="border-radius:10px"
 </div>
 </div>
 
-<div class="flex items-center gap-2">
-<span>●</span>
-<span><b>Exclusions:</b> Consumer stock photography</span>
-</div>
-</div>
-
-<br>
-
-> Asset eligibility verified via DAM metadata and usage rules.
-
 ---
 
 **🤖 Brand, Legal & Claims Compliance Agent is thinking…**
 
-<br>
+> Applying jurisdiction-specific rule engines defined inside the campaign deck.
 
-> Applying jurisdiction-specific rule engines defined inside the deck.
 
-### Jurisdictional Evaluation
-| Jurisdiction | Governing Rule | Risk Sensitivity | Outcome |
-|--------------|---------------|------------------|---------|
-| US | FTC Advertising Guidelines | Medium | Qualifiers required |
+### Jurisdictional Risk Evaluation
+| Jurisdiction   | Governing Rule               | Risk Level | Outcome              |
+|----------------|------------------------------|------------|----------------------|
+| United States  | FTC Advertising Guidelines   | Medium     | Qualifiers required  |
+
 `,
       apiCalls: [
         {
@@ -383,12 +492,15 @@ style="border-radius:10px"
     {
       message: "HITL Approved",
       response: `
-#### Human Review Received — Legal Approved
+#### Human-in-the-Loop Review Completed — Legal Approved
 
-### Legal actions applied:
-- Performance claims qualified with testing disclaimers 
-- Sustainability language aligned to approved phrasing 
-- Intel® and trademark references validated 
+### Legal Adjustments Applied
+| Area                  | Action                          |
+|-----------------------|----------------------------------|
+| Performance claims    | Qualified with approved disclaimers |
+| Sustainability language | Aligned to approved phrasing    |
+| Trademarks            | Intel® & Lenovo validated        |
+
 
 > Compliance lock applied. 
 
@@ -396,38 +508,32 @@ style="border-radius:10px"
 
 ---
 
-**🤖 AEM Authoring & Assembly Agent is thinking…**
+**🤖 AEM Assembly Readiness Agent is thinking…**
 
 <br>
 
-> Generating the AEM-aligned campaign page layout and content structure as an output artifact.
+> Producing the Fully Prepared AEM Input Package — no AEM authoring performed.
 
-| Assembly Step | Status |
-|---------------|--------|
-| Page creation | <span class="text-green-500">✔</span> |
-| Component placement | <span class="text-green-500">✔</span> |
-| Content binding | <span class="text-green-500">✔</span> |
-| Asset binding | <span class="text-green-500">✔</span> |
-| Metadata & SEO | <span class="text-green-500">✔</span> |
-| AEM Launch created | <span class="text-green-500">✔</span> |
+### Produces AEM Page Preparation Manifest:
+- Page metadata 
+- Component structure 
+- Content blocks 
+- Asset constraints 
+- Legal annotations 
+- Audit lineage 
 
-> Webpage assembled successfully. 
+### AEM Input Package Contents
+| Artifact                   | Format | Purpose                    |
+|----------------------------|--------|----------------------------|
+| Page Preparation Manifest  | JSON   | Page structure & metadata  |
+| Content Fragment Payloads  | JSON   | Component-ready content    |
+| Asset Reference Map        | JSON   | DAM binding guidance       |
+| Compliance Metadata        | JSON   | Audit & approvals          |
 
----
-
-**🤖 Quality, Accessibility & SEO Agent is thinking…**
-
-<br>
-
-> Final readiness checks completed.
-
-| Check | Result |
-|------|--------|
-| WCAG 2.1 AA | Pass |
-| SEO metadata | Complete |
-| Analytics readiness | Verified |
-
-> Page cleared for release.
+### Download Placeholders
+- <a href="https://drive.google.com/uc?export=download&id=1-XEIgeynjrzHW0k5rUApSK_Zgu6yzdCd" download="AEM_Page_Preparation_Manifest.json">AEM Page Preparation Manifest (JSON) – Authoritative execution input</a> 
+- <a href="https://drive.google.com/uc?export=download&id=1ez_YSfn9F2uVYzw4NQyguTRbFpypIUOO" download="AEM_Content_Fragment_Payloads.json">Content Fragment Payloads (JSON) – For CF-based AEM builds</a>  
+- <a href="https://drive.google.com/uc?export=download&id=1CRLaxaME_Tv9mHltOTJ5WbvRPtrKdVPt" download="Human-Readable Review Preview (HTML / PDF) – Review-only artifact.pdf">Human-Readable Review Preview (HTML / PDF) – Review-only artifact</a> 
 
 ---
 
@@ -436,22 +542,14 @@ style="border-radius:10px"
 ### Finalizing governance and traceability. 
 
 <div class="flex flex-col gap-3">
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Source PPT recorded </div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Datasheet links recorded </div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Agent decisions logged </div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Jurisdictional rules applied </div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Legal & brand approvals timestamped</div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Version tag (v1.0.0) validated against AEM and audit logs </div>
-<div class="flex items-center gap-2"><span class="text-green-500">✔</span>No conflicting versions detected across AEM or DAM</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Source PPT recorded</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Datasheet references recorded</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Policy versions captured</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Agent decisions logged</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Routing action</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>HITL approvals timestamped</div>
+<div class="flex items-center gap-2"><span class="text-green-500">✔</span>Version tag validated</div>
 </div>
-
-#### FINAL OUTPUT
-
-**Downloadable Product Page Template (PDF):** 🟢 READY FOR PUBLISH
-
-Generated Product Page Template (PDF):
-
-<a href="https://drive.google.com/uc?export=download&id=1CRLaxaME_Tv9mHltOTJ5WbvRPtrKdVPt" download="KYC_Summary_Report.pdf">Download PDF – Internal Preview</a>
 `,
     },
   ]),
