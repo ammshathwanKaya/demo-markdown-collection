@@ -1,19 +1,11 @@
-// https://sharetext.io/hr6rjv1e
+// https://sharetext.io/wnhs7od8
 localStorage.setItem(
   "demo_615e1bbd-a3f8-4a0f-8ba3-a30f6c908c1b",
   JSON.stringify([
     {
       message:
-        "Initialize a Restaurant Acquisition System (RAS) run using the provided leads file.",
+        "Identify, qualify, and onboard high-quality restaurant partner in Chicago.",
       response: `
-<h3>Input Artifacts</h3>
-<div class="flex flex-col gap-2">
-  <div><strong>Leads Dataset:</strong> <span class="bg-blue-100 text-[13px]" style="padding:4px 8px;border-radius:5px;">Kaya_Lead_Data.csv</span></div>
-  <div><strong>Total Lead Records Ingested:</strong> 10 restaurants</div>
-</div>
-
-<hr/>
-
 <strong>🤖 Orchestrator Agent is thinking…</strong>
 
 <p>
@@ -37,13 +29,62 @@ Initializing <strong>Restaurant Acquisition System (RAS)</strong> for inKind.
 
 <hr/>
 
+<strong>🤖 Discovery Agent is thinking…</strong>
+
+Building a composite, deduplicated restaurant universe for Chicago by unifying:
+- CRM Leads 
+- CRM Opportunities 
+- Public restaurant discovery sources 
+
+This universe will serve as the single substrate for all downstream qualification and acquisition actions. 
+
+### Source Systems Activated
+| System              | Purpose                     |
+|---------------------|-----------------------------|
+| CRM – Leads         | Early pipeline context      |
+| CRM – Opportunities | In-flight / historical deals |
+| Google Places       | Public discovery & ratings  |
+| Yelp                | Supplemental quality signals |
+| OpenTable           | Operational metadata        |
+
+Pulling all Chicago-related records from CRM.
+
+### CRM Sync Outcome (Validated)
+| Object               | Chicago Records  |
+|----------------------|-------|
+| Opportunities        | 227    |
+| Leads (ZIP-validated) | 4     |
+
+These records are tagged for contextual awareness, not exclusion.
+
+Discovering additional Chicago restaurant locations from public sources.
+
+### Public Discovery Outcome
+| Metric                 | Value |
+|------------------------|-------|
+| Restaurants discovered | 266   |
+
+<hr/>
+
 <strong>🤖 Lead Intake & Normalization Agent is thinking…</strong>
 
-<ul>
-  <li>Ingesting leads as the sole system of input</li>
-  <li>Normalizing restaurant group identities and multi-location structures</li>
-  <li>Standardizing revenue ranges, lead scores, and service types</li>
-</ul>
+Normalizing, deduplicating, and classifying all sources into a single location-level universe.
+
+Each restaurant location is tagged with:
+- Location_ID 
+- Restaurant_Type (Standalone / Chain) 
+- Brand_Name (if applicable) 
+- CRM_Lead_Flag 
+- CRM_Opportunity_Flag
+
+### Composite Discovery Output (Post-Deduplication)
+| Category                    | Count |
+|-----------------------------|-------|
+| Unique restaurant locations | 266   |
+| Standalone locations        | ~218  |
+| Chain locations             | ~27   |
+| Unique chain brands         | ~10   |
+
 
 <h3>Normalized Lead Snapshot (All Leads)</h3>
 
@@ -56,16 +97,19 @@ Initializing <strong>Restaurant Acquisition System (RAS)</strong> for inKind.
 <tbody>
 <tr><td>Rick Bayless Restaurants</td><td>7</td><td>85</td><td>Over $5M</td><td>Fine Dining</td></tr>
 <tr><td>Hemisphere Hospitality</td><td>3</td><td>75</td><td>$2M–$5M</td><td>Fine Dining</td></tr>
-<tr><td>Dhall Hospitality Group</td><td>3</td><td>71</td><td>$2M–$5M</td><td>Fine Dining</td></tr>
-<tr><td>Maria’s Italian Kitchen</td><td>8</td><td>73</td><td>$500K–$1M</td><td>Casual Sit Down</td></tr>
-<tr><td>Rest</td><td>6</td><td>71</td><td>$2M–$5M</td><td>Casual Sit Down</td></tr>
-<tr><td>Urban Taco Group</td><td>4</td><td>68</td><td>$1M–$2M</td><td>Fast Casual</td></tr>
-<tr><td>Coastal Kitchen Collective</td><td>2</td><td>66</td><td>$1M–$2M</td><td>Casual Sit Down</td></tr>
-<tr><td>Green Fork Bistro</td><td>1</td><td>62</td><td>$1M–$2M</td><td>Fine Dining</td></tr>
-<tr><td>Maple Street Eatery</td><td>1</td><td>58</td><td>$500K–$1M</td><td>Casual Sit Down</td></tr>
-<tr><td>Sunset Grill & Bar</td><td>2</td><td>55</td><td>$1M–$2M</td><td>Casual Dining</td></tr>
+<tr><td>Indienne</td><td>3</td><td>71</td><td>$2M–$5M</td><td>Fine Dining</td></tr>
+<tr><td>Avec River North</td><td>8</td><td>73</td><td>$500K–$1M</td><td>Casual Sit Down</td></tr>
+<tr><td>Gilt Bar</td><td>6</td><td>71</td><td>$2M–$5M</td><td>Casual Sit Down</td></tr>
+<tr><td>Gibsons Italia </td><td>4</td><td>68</td><td>$1M–$2M</td><td>Fast Casual</td></tr>
+<tr><td>Trivoli Tavern</td><td>2</td><td>66</td><td>$1M–$2M</td><td>Casual Sit Down</td></tr>
+<tr><td>Boka</td><td>1</td><td>62</td><td>$1M–$2M</td><td>Fine Dining</td></tr>
+<tr><td>Prime & Provisions</td><td>1</td><td>58</td><td>$500K–$1M</td><td>Casual Sit Down</td></tr>
+<tr><td>Ciccio Mio</td><td>2</td><td>55</td><td>$1M–$2M</td><td>Casual Dining</td></tr>
 </tbody>
 </table>
+<div class="w-full flex items-center justify-between" style='margin-top:-16px;'><div><strong>1-10</strong> of <strong>23</strong> results</div><div class="flex items-center gap-3"><span class="size-4 flex items-center justify-center bg-blue-500 text-white" style='width:24px;height:24px;border-radius:4px;'>1</span><span class="text-gray-400">2</span><span class="text-gray-400">3</span><span class="text-gray-400"> 🡢 </span></div></div>
+
+<br>
 
 <p><em>All leads initialized into RQS with identity-only fields.</em></p>
 
@@ -137,14 +181,14 @@ AUV estimation derived from:
 <tbody>
 <tr><td>Rick Bayless Restaurants</td><td>$1.8M</td><td>4.6</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Strong economics</td></tr>
 <tr><td>Hemisphere Hospitality</td><td>$1.1M</td><td>4.3</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Meets threshold</td></tr>
-<tr><td>Dhall Hospitality Group</td><td>$1.0M</td><td>4.1</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Borderline AUV</td></tr>
-<tr><td>Coastal Kitchen Collective</td><td>$1.2M</td><td>4.2</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Meets threshold</td></tr>
-<tr><td>Green Fork Bistro</td><td>$1.4M</td><td>4.5</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>High quality</td></tr>
-<tr><td>Urban Taco Group</td><td>$0.9M</td><td>4.1</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
-<tr><td>Maria’s Italian Kitchen</td><td>$0.6M</td><td>4.4</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
-<tr><td>Rest</td><td>$0.9M</td><td>3.9</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>Rating & AUV</td></tr>
-<tr><td>Maple Street Eatery</td><td>$0.7M</td><td>4.0</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
-<tr><td>Sunset Grill & Bar</td><td>$0.8M</td><td>3.8</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>Rating below threshold</td></tr>
+<tr><td>Indienne</td><td>$1.0M</td><td>4.1</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Borderline AUV</td></tr>
+<tr><td>Trivoli Tavern</td><td>$1.2M</td><td>4.2</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>Meets threshold</td></tr>
+<tr><td>Boka</td><td>$1.4M</td><td>4.5</td><td style="color:#16A34A;font-weight:bold;">PASS</td><td>High quality</td></tr>
+<tr><td>Gibsons Italia</td><td>$0.9M</td><td>4.1</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
+<tr><td>Avec River North</td><td>$0.6M</td><td>4.4</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
+<tr><td>Gilt Bar</td><td>$0.9M</td><td>3.9</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>Rating & AUV</td></tr>
+<tr><td>Prime & Provisions</td><td>$0.7M</td><td>4.0</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>AUV below threshold</td></tr>
+<tr><td>Ciccio Mio</td><td>$0.8M</td><td>3.8</td><td style="color:#DC2626;font-weight:bold;">FAIL</td><td>Rating below threshold</td></tr>
 </tbody>
 </table>
 
@@ -159,7 +203,7 @@ AUV estimation derived from:
 <details>
   <summary><strong>RQS — Updated Economic Qualification & Hard Gates</strong></summary>
 
-| Attribute Name        | Rick Bayless Restaurants | Hemisphere Hospitality | Dhall Hospitality Group | Maria’s Italian Kitchen | Rest | Urban Taco Group | Coastal Kitchen Collective | Green Fork Bistro | Maple Street Eatery | Sunset Grill & Bar |
+| Attribute Name        | Rick Bayless Restaurants | Hemisphere Hospitality | Indienne  | Avec River North | Gilt Bar | Gibsons Italia | Trivoli Tavern | Boka  | Prime & Provisions  | Ciccio Mio  |
 |-----------------------|--------------------------|------------------------|--------------------------|-------------------------|------|------------------|----------------------------|-------------------|---------------------|--------------------|
 | Estimated_AUV         | ~$1.8M                   | ~$1.1M                 | ~$1.0M                   | ~$0.6M                  | ~$0.9M | ~$0.9M           | ~$1.2M                     | ~$1.4M            | ~$0.7M              | ~$0.8M             |
 | AUV_Confidence        | High                     | Medium                 | Medium                   | Low                     | Low  | Low              | Medium                     | High              | Low                 | Low                |
@@ -210,9 +254,9 @@ Proceeding with economically qualified restaurants only.
 <tbody>
 <tr><td>Rick Bayless Restaurants</td><td>85</td><td>$1.8M</td><td><span class="bg-green-100 text-green-700" style="padding:4px 8px;border-radius:5px;">Tier A</span></td></tr>
 <tr><td>Hemisphere Hospitality</td><td>75</td><td>$1.1M</td><td><span class="bg-green-100 text-green-700" style="padding:4px 8px;border-radius:5px;">Tier A</span></td></tr>
-<tr><td>Coastal Kitchen Collective</td><td>66</td><td>$1.2M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
-<tr><td>Dhall Hospitality Group</td><td>71</td><td>$1.0M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
-<tr><td>Green Fork Bistro</td><td>62</td><td>$1.4M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
+<tr><td>Trivoli Tavern</td><td>66</td><td>$1.2M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
+<tr><td>Indienne</td><td>71</td><td>$1.0M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
+<tr><td>Boka</td><td>62</td><td>$1.4M</td><td><span class="bg-yellow-100 text-yellow-700" style="padding:4px 8px;border-radius:5px;">Tier B</span></td></tr>
 </tbody>
 </table>
 
@@ -225,7 +269,7 @@ Proceeding with economically qualified restaurants only.
 <details>
   <summary><strong>RQS — Updated Risk Surfacing & Sales Readiness</strong></summary>
 
-| Attribute Name        | Rick Bayless Restaurants | Hemisphere Hospitality | Dhall Hospitality Group | Coastal Kitchen Collective | Green Fork Bistro |
+| Attribute Name        | Rick Bayless Restaurants | Hemisphere Hospitality | Indienne  | Trivoli Tavern  | Boka  |
 |-----------------------|--------------------------|------------------------|--------------------------|----------------------------|-------------------|
 | Estimated_AUV         | ~$1.8M                   | ~$1.1M                 | ~$1.0M                   | ~$1.2M                     | ~$1.4M            |
 | AUV_Confidence        | High                     | Medium                 | Medium                   | Medium                     | High              |
@@ -338,8 +382,8 @@ Please confirm:
           },
           bodyTemplate: `{
   "subject": "Action Required: Confirm Outreach for Qualified Tier A Restaurants",
-  "to": ["ishan@kayatech.com"],
-  "content": "<p>Hi Vijay,</p><p>The <strong>Restaurant Acquisition System (RAS)</strong> has completed all automated qualification and economic gating for the current lead set.</p><p>Your commercial input is now required before any outreach can proceed.</p><br><p><strong>Qualified Restaurants (Tier A)</strong></p><p>Based on enforced economic and risk filters, the following restaurants are recommended for pursuit:</p><ul><li>Rick Bayless Restaurants</li><li>Hemisphere Hospitality</li></ul><br><p><strong>Proposed Outreach Parameters</strong></p><p>Please review and confirm the following:</p><ul><li><strong>Outreach Method:</strong> AI voice agent calls</li><li><strong>Automation Level:</strong> Assisted</li></ul><p>No contact will be made unless you explicitly confirm or modify these parameters.</p><br><p><strong>What Happens Next</strong></p><p>Once you confirm or modify the proposed selection:</p><ul><li>AI Voice agents will deploy outreach calls to Rick Bayless Restaurant & Hemisphere Hospitality</li><li>System will automatically analyse the transcripts and take on the next actions</li><li>AEs will be informed on the next actions</li></ul><br><p><strong>Action Needed:</strong><br>Please reply to confirm, modify, or decline the proposed outreach approach</p><div style='margin-top:16px;'><button style='background-color: #3B82F6; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-right: 8px;'>Confirm Approach</button><button style='background-color: #6B7280; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;'>Modify Parameters</button></div><br><p>Thanks,<br>Restaurant Acquisition System</p>"
+  "to": ["vijay@kayatech.com"],
+  "content": "<p>Hi Vijay,</p><p>The <strong>Restaurant Acquisition System (RAS)</strong> has completed all automated qualification and economic gating for the current lead set.</p><p>Your commercial input is now required before any outreach can proceed.</p><br><p><strong>Qualified Restaurants (Tier A)</strong></p><p>Based on enforced economic and risk filters, the following restaurants are recommended for pursuit:</p><ul><li>Rick Bayless Restaurants</li><li>Hemisphere Hospitality</li></ul><br><p><strong>Proposed Outreach Parameters</strong></p><p>Please review and confirm the following:</p><ul><li><strong>Outreach Method:</strong> AI voice agent calls  + Email</li><li><strong>Automation Level:</strong> Assisted</li></ul><p>No contact will be made unless you explicitly confirm or modify these parameters.</p><br><p><strong>What Happens Next</strong></p><p>Once you confirm or modify the proposed selection:</p><ul><li>AI Voice agents will deploy outreach calls to Rick Bayless Restaurant & Hemisphere Hospitality</li><li>System will automatically analyse the transcripts and take on the next actions</li><li>AEs will be informed on the next actions</li></ul><br><p><strong>Action Needed:</strong><br>Please reply to confirm, modify, or decline the proposed outreach approach</p><div style='margin-top:16px;'><button style='background-color: #3B82F6; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-right: 8px;'>Confirm Approach</button><button style='background-color: #6B7280; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;'>Modify Parameters</button></div><br><p>Thanks,<br>Restaurant Acquisition System</p>"
 }`,
           waitingConfirmation: true,
 
@@ -377,7 +421,7 @@ Please confirm:
 
 **Outreach Mode:** 
 
-- AI Voice Agent led calls 
+- AI Voice Agent led calls + Email
 
 <p><em>Audit trail updated.</em></p> 
 
@@ -398,6 +442,8 @@ Please confirm:
 | Rick Bayless Restaurants    | Completed       | Follow-up approved |
 | Hemisphere Hospitality      | Completed       | Follow-up approved |
 
+<div class="bg-[#d7d7d7] p-3 rounded-full inline-block border-2 border-gray-200"><audio class="rounded-full" controls><source src="https://www.dropbox.com/scl/fi/yd06uw55yll8fbiuz4iz8/Inkind-Call-latest.mp3?rlkey=gfyfhnnukbq6iy2gmnvy6lvgi&st=dhetf8dj&dl=0&raw=1" type="audio/mpeg">Your browser does not support the audio element.</audio></div>
+
 **Call Summary — Rick Bayless Restaurants** 
 
 - Owner reached and engaged for full call duration 
@@ -412,8 +458,6 @@ Please confirm:
 - Outreach mode remains <strong>AE-led only</strong> 
 - Notes attached to RQS and CRM context 
 
-<div class="bg-[#d7d7d7] p-3 rounded-full inline-block border-2 border-gray-200"><audio class="rounded-full" controls><source src="https://www.dropbox.com/scl/fi/9a1e2w3hx1rw1hp1of271/Inkind-Call-New.mp3?rlkey=gnjilnrngtuenau0vzyc57ssb&st=h468yzby&dl=0&raw=1" type="audio/mpeg">Your browser does not support the audio element.</audio></div>
-
 **Call Summary — Hemisphere Hospitality** 
 
 - Operator reached and receptive 
@@ -427,11 +471,11 @@ Please confirm:
 - AE notification queued with suggested talking points 
 - POS confirmation flagged for discussion during follow-up 
 
-<div class="bg-[#d7d7d7] p-3 rounded-full inline-block border-2 border-gray-200"><audio class="rounded-full" controls><source src="https://www.dropbox.com/scl/fi/9a1e2w3hx1rw1hp1of271/Inkind-Call-New.mp3?rlkey=gnjilnrngtuenau0vzyc57ssb&st=h468yzby&dl=0&raw=1" type="audio/mpeg">Your browser does not support the audio element.</audio></div>
-
 <p><em>No automated sales outreach executed beyond initial informational calls.</em></p>
 <p><em>All call outcomes logged with timestamps and script versioning.</em></p>
 <p><em>Human-led follow-up is required to proceed further.</em></p>
+
+### Email templates has been populated and successfully delivered.
 
 <hr/>
 
@@ -456,9 +500,29 @@ Please confirm:
 Restaurant Acquisition System run complete. 
 Ready for next acquisition cycle. 
 `,
+      apiCalls: [
+        {
+          name: "sendEmail",
+          trigger: "before",
+          buttonId: "email",
+          response: "Human approval initiated Successfully",
+          method: "POST",
+          url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
+          headers: {
+            accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          bodyTemplate: `{
+  "subject": "Follow-up & Next Steps - inKind Discussion",
+  "to": ["vijay@kayatech.com"],
+  "content": "<p>Hi John,</p><p>Thank you for taking the time to speak with us today. I wanted to follow up with a brief summary of the discussion and outline the next steps.</p><br><p><strong>Summary from the Call</strong></p><ul><li>We shared a high-level overview of inKind's guest pay and dining credit model.</li><li>The approach was received positively, particularly from a guest experience and brand perspective.</li><li>You indicated a preference for a white-glove, AE-led approach for any follow-up, given brand sensitivity and positioning.</li></ul><br><p><strong>Next Steps</strong></p><ul><li>We will share a concise set of materials for your review.</li><li>If helpful, we can schedule a short, AE-led introductory conversation to walk through details and address any questions.</li></ul><br><p><strong>Scheduling</strong></p><p>When its convenient, you can select a time for a follow-up conversation using the link below:</p><p><a href='#' style='color:#2563EB; text-decoration: underline;'>Select a time for a follow-up conversation</a></p><br><p>Please feel free to proceed at your pace - we're happy to align around what works best for you.</p><br><p>Best regards,<br>The inKind Team</p>"
+}`,
+          waitingConfirmation: false,
+        },
+      ],
     },
     {
-      message: "Show all knowledge base rules of the agents",
+      message: "Show me the underlying guidelines that power this I-Flow",
       response: `
 **🤖 Orchestrator Agent is thinking…** 
 
@@ -601,12 +665,9 @@ Ensure commercial control remains human-led at all times.
 Standardize outreach while preventing unapproved messaging. 
 
 **Supported Templates** 
-- Email — Initial Outreach 
-  (Template link available) 
-- SMS — Follow-up 
-  (Template link available) 
-- Voice / Avatar — Level-1 Intro Script 
-  (Template link available) 
+- Email — Initial Outreach <span class="text-blue-500 underline">(Template link)</span>
+- SMS — Follow-up <span class="text-blue-500 underline">(Template link)</span>
+- Voice / Avatar — Level-1 Intro Script <span class="text-blue-500 underline">(Template link)</span>
 
 **Rules** 
 - Outreach is only permitted after human approval 
