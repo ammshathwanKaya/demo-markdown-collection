@@ -382,7 +382,7 @@ Please confirm:
           },
           bodyTemplate: `{
   "subject": "Action Required: Confirm Outreach for Qualified Tier A Restaurants",
-  "to": ["vijay@kayatech.com"],
+  "to": ["ammshathwan@kayatech.com"],
   "content": "<p>Hi Vijay,</p><p>The <strong>Restaurant Acquisition System (RAS)</strong> has completed all automated qualification and economic gating for the current lead set.</p><p>Your commercial input is now required before any outreach can proceed.</p><br><p><strong>Qualified Restaurants (Tier A)</strong></p><p>Based on enforced economic and risk filters, the following restaurants are recommended for pursuit:</p><ul><li>Rick Bayless Restaurants</li><li>Hemisphere Hospitality</li></ul><br><p><strong>Proposed Outreach Parameters</strong></p><p>Please review and confirm the following:</p><ul><li><strong>Outreach Method:</strong> AI voice agent calls  + Email</li><li><strong>Automation Level:</strong> Assisted</li></ul><p>No contact will be made unless you explicitly confirm or modify these parameters.</p><br><p><strong>What Happens Next</strong></p><p>Once you confirm or modify the proposed selection:</p><ul><li>AI Voice agents will deploy outreach calls to Rick Bayless Restaurant & Hemisphere Hospitality</li><li>System will automatically analyse the transcripts and take on the next actions</li><li>AEs will be informed on the next actions</li></ul><br><p><strong>Action Needed:</strong><br>Please reply to confirm, modify, or decline the proposed outreach approach</p><div style='margin-top:16px;'><button style='background-color: #3B82F6; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-right: 8px;'>Confirm Approach</button><button style='background-color: #6B7280; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;'>Modify Parameters</button></div><br><p>Thanks,<br>Restaurant Acquisition System</p>"
 }`,
           waitingConfirmation: true,
@@ -514,7 +514,7 @@ Ready for next acquisition cycle.
           },
           bodyTemplate: `{
   "subject": "Follow-up & Next Steps - inKind Discussion",
-  "to": ["vijay@kayatech.com"],
+  "to": ["ammshathwan@kayatech.com"],
   "content": "<p>Hi John,</p><p>Thank you for taking the time to speak with us today. I wanted to follow up with a brief summary of the discussion and outline the next steps.</p><br><p><strong>Summary from the Call</strong></p><ul><li>We shared a high-level overview of inKind's guest pay and dining credit model.</li><li>The approach was received positively, particularly from a guest experience and brand perspective.</li><li>You indicated a preference for a white-glove, AE-led approach for any follow-up, given brand sensitivity and positioning.</li></ul><br><p><strong>Next Steps</strong></p><ul><li>We will share a concise set of materials for your review.</li><li>If helpful, we can schedule a short, AE-led introductory conversation to walk through details and address any questions.</li></ul><br><p><strong>Scheduling</strong></p><p>When its convenient, you can select a time for a follow-up conversation using the link below:</p><p><a href='#' style='color:#2563EB; text-decoration: underline;'>Select a time for a follow-up conversation</a></p><br><p>Please feel free to proceed at your pace - we're happy to align around what works best for you.</p><br><p>Best regards,<br>The inKind Team</p>"
 }`,
           waitingConfirmation: false,
