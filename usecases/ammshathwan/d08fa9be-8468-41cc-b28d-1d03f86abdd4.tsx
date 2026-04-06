@@ -1,4 +1,4 @@
-// https://sharetext.io/fbbxn6u0
+// https://sharetext.io/rz90zrhe
 
 localStorage.setItem(
   "demo_d08fa9be-8468-41cc-b28d-1d03f86abdd4",
@@ -15,7 +15,7 @@ localStorage.setItem(
 
 <br>
 
-### Systems Activated
+### Integrating with:
 - KBOP (approved design baseline) 
 - RFP requirements (pricing & commercial clauses) 
 - SQE / MyQuote / APE (pricing engines) 
@@ -130,32 +130,41 @@ Effective_BW = 250 × 1.2 × 1.0 × 1.0 = 300Mb
 <br>
 
 ### Integrating
-| Input | Value | Source |
-|-------|-------|--------|
-| ISP-X | £4.0 | LBP-1 |
-| ISP-Y | £4.5 | LBP-1 |
-| ISP-Z | £3.8 | LBP-1 |
-| MPLS | £1,500 | Product Catalogue |
-| SDWAN | £150 | Tool |
-| LAN | £200 | Tool |
+| Component                     | Value      | Source System        | How Retrieved                              |
+|------------------------------|------------|---------------------|--------------------------------------------|
+| Component                    | Value      | Source System       | How Retrieved                              |
+| Access (DIA/MPLS Port)       | £4.5/Mbps  | LBP-1 DB            | API: /pricing/lbp/location?site=Hull        |
+| MPLS Port Charge             | £1,500     | AQE / MyQuote API   | /aqe/mpls/port?bw=300&site=Hull             |
+| SD-WAN License               | £150       | SDWAN Config Tool   | /sdwan/license?tier=branch                  |
+| LAN (Switch/AP amortized)    | £200       | LAN BOM Engine      | /lan/bom?site=Hull&type=branch              |
+| Install (NRC)                | £11,500    | Vendor Quote DB     | /vendor/install?site=Hull                   |
 
 ### Evaluating
-Vendor selection rule: 
+Select vendor rate from P-1: 
 
-→ Highest availability = ISP-Y 
+→ ISP-Y chosen due to availability SLA constraint 
 
 ### Computing
-Access = 300 × 4.5 = 1,350 
+Access_MRR = Effective_BW × Rate_per_Mbps = 300 × 4.5 = £1,350 
 
-MPLS = 1,500 
+MPLS_MRR = £1,500 (flat port charge from AQE) 
 
-SDWAN = 150 
+SDWAN_MRR = License + Controller share = £150 
 
-LAN = 200 
+LAN_CAPEX = £7,200 (from BOM); Amortization = 36 months 
 
-MRR = 3,350 
+LAN_MRR = 7,200 / 36 = £200 
 
-NRC = 11,500
+<div class="flex flex-col">
+<span>(TOTAL) MRR = Access + MPLS + SDWAN + LAN </span>
+<span>= 1,350 + 1,500 + 150 + 200 = £3,350</span>
+</div>
+<br>
+<div class="flex flex-col">
+<span>NRC = Install + CPE + Activation </span>
+<span>= £6,000 (circuit install) + £3,500 (CPE) + £2,000 (activation) </span>
+<span>= £11,500</span>
+</div>
 
 ### Producing
 | Metric | Value |
@@ -179,26 +188,36 @@ NRC = 11,500
 
 ### Integrating (All Intelligence Sources)
 
-## LBP-1 (Location Pricing)
-| Metric | Value |
-|--------|-------|
-| Expected Rate | £4.0 |
+## P-1 (Location Pricing)
+| Metric   | Value      | Meaning                                      | Source |
+|----------|------------|----------------------------------------------|--------|
+| P50 Rate | £4.0/Mbps  | Median observed price in similar geo         | LBP-1  |
+| P25 Rate | £3.8/Mbps  | Aggressive (best deals)                      | LBP-1  |
+| P75 Rate | £4.5/Mbps  | Conservative (high SLA / urgency)            | LBP-1  |
 
-## LBP-2 (Historical Deals)
-| Deal | Vendor | Price | Outcome |
-|------|--------|-------|---------|
-| Deal-142 | ISP-X | £2,650 | WON |
-| Deal-118 | ISP-Y | £3,050 | LOST |
+| Metric        | Value |
+|---------------|-------|
+| Expected Rate | £4.0  |
 
-## Vendor DB
-| Vendor | SLA | Discount |
-|--------|-----|----------|
-| ISP-X | High | 10% |
+### P-2 (Historical Deals)
+| Deal     | Vendor | Price   | Outcome |
+|----------|--------|---------|---------|
+| Deal     | Vendor | Price   | Outcome |
+| Deal-142 | ISP-X  | £2,650  | WON     |
+| Deal-118 | ISP-Y  | £3,050  | LOST    |
 
-## ISG Benchmark
-| Category | Price |
-|----------|-------|
-| Rural WAN | £2,700 |
+### Vendor DB 
+| Vendor | SLA  | Discount |
+|--------|------|----------|
+| Vendor | SLA  | Discount |
+| ISP-X  | High | 10%      |
+
+### ISG Benchmark (Category: Rural WAN)
+| Percentile                          | Price (£) | Interpretation    |
+|-------------------------------------|--------|----------------------|
+| P25                                 | £2,650 | Highly competitive  |
+| P50                                 | £2,800 | Market median       |
+| P75                                 | £3,050 | Premium / SLA heavy |
 
 ### Evaluating (Rules / Rubrics)
 - R1: If rate variance >10% → normalize (LBP-1) 
@@ -207,17 +226,42 @@ NRC = 11,500
 - R4: Apply contract discounts where applicable
 
 ### Computing (Full Trace)
-Step 1 — Rate Correction 
+Corrected Rate = £4.0 
+ 
+New Access = 300 × 4.0 = 1,200 
+
+Savings = 1,350 - 1,200 = £150 
+ 
+Total MRR: 
+3,350 → 3,200 → (rounded + dependencies = £3,100) 
+
+## Step 1 — Rate Correction 
 
 3,350 → 3,100 
 
-Step 2 — Vendor Switch 
+## Step 2 — Vendor Switch 
 
 ISP-Y → ISP-X 
 
-Savings = 300 
+ISP-X Rate = £3.6/Mbps (after 10% contract discount) 
 
-Step 3 — Benchmark Alignment 
+ISP-X Rate = £3.6/Mbps (after 10% contract discount) 
+
+ACCESS SAVINGS: 1,200 - 1,080 = £120 
+
+Additional Savings: - MPLS bundle discount: £80 
+- SDWAN vendor alignment: £100 
+
+TOTAL Savings = 300 
+
+## Step 3 — Benchmark Alignment 
+
+Apply: 
+- commercial discount (5%) 
+- SLA tier adjustment 
+- hardware amortization smoothing 
+
+3,100 × 0.95 ≈ £2,945 ≈ £2,950 
 
 3,100 → 2,950 
 
@@ -243,6 +287,18 @@ Step 3 — Benchmark Alignment
 **🤖 Scenario & Pricing Strategy Agent is thinking…**
 
 <br>
+
+| Component | Value                  |
+|-----------|------------------------|
+| Component | Value                  |
+| Access    | 1,200                  |
+| MPLS      | 1,400 (post-discount)  |
+| SDWAN     | 150                    |
+| LAN       | 200                    |
+| Ops Cost  | 250                    |
+
+
+### Total Cost = 3,200
 
 ### Integrating
 | Input | Value | Source |
