@@ -1,5 +1,3 @@
-// https://sharetext.io/mvhsde1d - mail to vijay  jason
-// https://sharetext.io/siesm2ir - mail to jason
 localStorage.setItem(
   "demo_a716a53e-392a-41c1-98d1-687771fc330a",
   JSON.stringify([
@@ -40,8 +38,7 @@ Operating under **KAYA deterministic orchestration + HITL governance framework.*
 
 Routing to → **Structured Procurement Intake Agent** 
 
-
-
+<br>
 
 **🤖 Structured Procurement Intake Agent is thinking…** 
 
@@ -62,15 +59,13 @@ Two procurement events detected.
 
 Routing to → **Procurement Intelligence Cluster** 
 
-
-
+<br>
 
 **🤖 Procurement Intelligence Agent is thinking…** 
 
 Validating sourcing governance and vendor eligibility. 
 
-
-
+<br>
 
 **Evidence Panel — Vendor Validation** 
 
@@ -100,8 +95,7 @@ Risk Rating: Low
 
 ✅ Vendor eligible. 
 
-
-
+<br>
 
 **Media Equipment Vendor** 
 
@@ -127,20 +121,17 @@ Approved Media Equipment Vendor
 
 ✅ Vendor eligible. 
 
-
-
+<br>
 
 Routing to → **Architecture Compliance Agent** 
 
-
-
+<br>
 
 **🤖 Architecture Compliance Agent is thinking…** 
 
 Validating technical compatibility. 
 
-
-
+<br>
 
 **Evidence Panel — Network Router Validation** 
 
@@ -168,8 +159,7 @@ Infrastructure must support forecast demand with 20% capacity margin
 
 ⚠ Conditional capacity margin. 
 
-
-
+<br>
 
 **Evidence Panel — Media Equipment Validation** 
 
@@ -197,8 +187,7 @@ Production equipment must support 4K HDR broadcast standards
 
 ✅ Compatible. 
 
-
-
+<br>
 
 **Conditional Validation (Network Case)** 
 
@@ -232,8 +221,7 @@ Requester clarification required.
           <li>Whether the upgrade roadmap has been reviewed and verified</li>\
         </ul>\
         <p>Kindly provide clarification so that the validation process can proceed.</p>\
-        <p style='margin-top:24px;'>Regards,
-Architecture Review Team</p>\
+        <p style='margin-top:24px;'>Regards,<br/>Architecture Review Team</p>\
       </td></tr>\
     </table>\
   </div>"
@@ -268,13 +256,11 @@ Architecture Review Team</p>\
 
 ✅ Conditional requirement satisfied. 
 
-
-
+<br>
 
 Routing to → **HITL Engineering Authority** 
 
-
-
+<br>
 
 **🤖 HITL Checkpoint — Engineering Authority** 
 
@@ -287,7 +273,7 @@ Engineering decision panel.
 | Security Compliance | ✅ | ✅ |
 
 Pending Approval from Engineering Authority: **Enter ‘Approve’ to proceed:** 
-
+ 
 `,
     },
     {
@@ -299,15 +285,13 @@ Engineering approval granted.
 
 Routing to → **Financial Governance Agent** 
 
-
-
+<br>
 
 **🤖 Financial Governance Agent is thinking…** 
 
 Validating budget and financial exposure. 
 
-
-
+<br>
 
 **Evidence Panel — Financial Validation** 
 
@@ -328,8 +312,7 @@ Purchases must not exceed approved budget allocation
 
 ✅ Budget available. 
 
-
-
+<br>
 
 **Media Production Equipment** 
 
@@ -344,13 +327,11 @@ Data retrieved
 
 ✅ Budget available. 
 
-
-
+<br>
 
 Routing to → **HITL Financial Authorization**
 
-
-
+<br>
 
 **🤖 HITL Checkpoint — Financial Authorization** 
 
@@ -363,13 +344,11 @@ Finance controller reviews exposure.
 
 Finance approval granted. 
 
-
-
+<br>
 
 Routing to → **PO Generation Agent** 
 
-
-
+<br>
 
 **🤖 PO Generation Agent is thinking…** 
 
@@ -395,13 +374,11 @@ Generating enterprise purchase orders.
 
 **Download Network Infrastructure PDF Here:** <a href="https://drive.google.com/uc?export=download&id=1sCq1HiGrbBbSqNhd33BxxRmgYXX_ObHx" download="acme_PO_network_infrastructure.pdf">acme_PO_network_infrastructure.pdf</a>
 
-
-
+<br>
 
 Routing to → **PO Distribution Agent**
 
-
-
+<br>
 
 **🤖 PO Distribution Agent is thinking…** 
 
@@ -429,8 +406,7 @@ Vendor receives:
 
 Routing to → **Financial Setup Agent**
 
-
-
+<br>
 
 **🤖 Financial Setup Agent is thinking…** 
 
@@ -450,13 +426,11 @@ Procurement orchestration complete.
 
 Operational lifecycle transitions to downstream platforms (AP, Vendor Management etc.). 
 
-
-
+<br>
 
 Routing to → **Procurement Command Center**
 
-
-
+<br>
 
 **📊 Procurement Command Center Dashboard** 
 
