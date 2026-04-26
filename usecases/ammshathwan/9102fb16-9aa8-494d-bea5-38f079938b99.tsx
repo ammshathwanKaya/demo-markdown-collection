@@ -267,7 +267,7 @@ localStorage.setItem(
 *Embedding monitoring cadence…*  
 *Rendering final PDF…*  
 
-**KYC Summary Report Generated** → <a href="https://drive.google.com/uc?export=download&id=1TMmrGDJn1hu3atFQ9I1MoPgk3KTYK1VJ" download="KYC_Summary_Report.pdf">Download Report (PDF)</a>
+**KYC Summary Report Generated** → <a href="https://drive.google.com/uc?export=download&id=10rORuyUYfjbzFsYAXPQTNpacnlPfY38m" download="KYC_Summary_Report.pdf">Download Report (PDF)</a>
 
 
 <br>
@@ -351,5 +351,5 @@ This ticket is auto-generated using KAYA's JIRA connector. 
 | Risk Re-score | On Demand | Triggered by new alerts |
 `,
     },
-  ])
+  ]),
 );

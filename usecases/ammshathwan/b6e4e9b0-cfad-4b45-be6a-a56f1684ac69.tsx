@@ -241,5 +241,5 @@ Loan Servicing Team
         },
       ],
     },
-  ])
+  ]),
 );
