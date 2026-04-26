@@ -2,8 +2,7 @@ localStorage.setItem(
   "demo_14f381f4-8656-4d08-9c3e-a0f1e81f8622",
   JSON.stringify([
     {
-      message:
-        "Ensure flawless onboarding for new hires globally — from offer acceptance to 90-day productivity — while maintaining jurisdictional compliance, operational readiness, and enterprise governance.",
+      message: "Ensure flawless onboarding for new hires globally — from offer acceptance to 90-day productivity — while maintaining jurisdictional compliance, operational readiness, and enterprise governance.",
       response: `
 **🤖 Orchestration & Governance Agent is thinking…** 
 
@@ -13,17 +12,19 @@ Initializing **Enterprise Onboarding Orchestration System (EOOS)**.
 
 EOOS is a governed agentic application designed to: 
 
-- Orchestrate onboarding across HR, IT, Finance, Facilities, and Managers 
-- Dynamically apply jurisdiction-specific compliance frameworks 
-- Provision enterprise systems and assets before DOJ 
-- Monitor readiness across operational teams 
-- Detect onboarding risks early through EWS signals 
-- Trigger automated remediation workflows 
-- Maintain immutable audit lineage 
+- Orchestrate onboarding across HR, IT, Finance, Facilities, and Managers  
+- Dynamically apply jurisdiction-specific compliance frameworks  
+- Activate **pre-boarding immediately post offer acceptance (conversion-critical phase)**  
+- Build onboarding profile dynamically from pre-boarding signals  
+- Provision enterprise systems and assets before DOJ  
+- Monitor readiness across operational teams  
+- Detect onboarding risks early through EWS signals  
+- Trigger automated remediation workflows  
+- Maintain immutable audit lineage  
 
-Aligned with **KAYA deterministic orchestration + HITL governance framework.** 
+Aligned with **KAYA deterministic orchestration + HITL governance framework** 
 
-### Systems Activated 
+###  🧩 Systems Activated 
 
 | **Function** | **System** |
 |--------------|------------|
@@ -39,29 +40,32 @@ Aligned with **KAYA deterministic orchestration + HITL governance framework.**
 | Communication | Slack / Teams |
 | Audit | KAYA Governance Layer |
 
-**🤖 Orchestration & Governance Agent is thinking…** 
+**TRIGGER EVENT** 
 
-Enterprise onboarding workflow initialized. 
-
-HRIS onboarding triggers will now be evaluated. 
+**Offer Accepted (Greenhouse → EOOS Trigger)**
 
 <br>
 
-Routing to → **Global Onboarding Intake Agent**
+**PHASE 1 — PRE-BOARDING INITIATION (OFFER ACCEPT → DOJ)** 
+
+**🤖 Pre-Boarding Experience Agent is thinking…** 
+
+Pre-boarding initiated before HRIS onboarding profile finalization. 
 
 <br>
 
-**🤖 Global Onboarding Intake Agent is thinking…** 
+**Objectives** 
 
-Scanning **HRIS for new onboarding triggers.** 
+- Maximize Offer Accept → Join conversion  
+- Build early engagement and confidence  
+- Capture structured inputs to shape onboarding  
+- Complete compliance before DOJ  
+- Reduce Day-1 overload  
 
-Two onboarding events detected. 
+### Candidate Context Identified 
 
-### Employee Profiles 
-
-| **Attribute** | **Employee A** | **Employee B** |
-|---------------|----------------|----------------|
-| Name | John Miller | Priya Sharma |
+| **Attribute** | **John Miller** | **Priya Sharma** |
+|---------------|----------------|------------------|
 | Role | VP Operations | Junior Software Engineer |
 | Country | USA | India |
 | Jurisdiction | California | Karnataka |
@@ -69,116 +73,214 @@ Two onboarding events detected.
 | Seniority | Executive | Entry Level |
 | Manager | COO | Engineering Manager |
 
+**PRE-BOARDING STRUCTURE** 
+
+| **Stream** | **Purpose** | **Ownership** |
+|------------|-------------|---------------|
+| Engagement & Culture | Emotional commitment | HR + Manager |
+| Role & Context Enablement | Day-1 clarity | Manager |
+| Compliance & Documentation | Pre-DOJ compliance | HR |
+| Operational Inputs | Drive provisioning | IT / Ops |
+
+**JOHN — PRE-BOARDING JOURNEY (USA, EXECUTIVE)** 
+
+**Engagement & Culture** 
+
+- Personalized welcome email from COO  
+- Company strategy overview (growth, performance, positioning)  
+- Leadership culture, governance expectations  
+- Executive-level achievements and updates  
+
+**Relationship Anchoring** 
+
+- 1:1 intro meeting scheduled with COO  
+- Executive leadership peer introductions  
+- Executive Assistant assigned  
+
+**Role Context & Expectations** 
+
+- Ops Strategy Brief shared  
+- First 30-day expectations defined  
+- Strategic priorities captured as structured input  
+- Preferred operating cadence captured  
+
+**Compliance (California, USA)** 
+
+- I-9 documentation checklist shared  
+- California labor disclosures provided for acknowledgment  
+- Executive governance agreements initiated for digital signing  
+
+**Operational Inputs Captured** 
+
+- Workspace requirements (office setup preferences)  
+- Device preferences (laptop configuration, accessories)  
+- Travel and physical presence expectations  
+
+**DOJ Confirmation & Nudges** 
+
+- DOJ reconfirmation (date, time, location)  
+- Calendar invites sent  
+- Reminder cadence triggered (T-14, T-7, T-2 days)  
+
+**PRIYA — PRE-BOARDING JOURNEY (INDIA, ENGINEER)** 
+
+**Engagement & Culture** 
+
+- Welcome email from Engineering Manager  
+- Company culture, team structure, engineering philosophy  
+- Engineering blogs, product demos, release highlights  
+
+**Relationship Anchoring** 
+
+- Intro call with Engineering Manager  
+- Buddy assigned (peer developer)  
+- Optional team introduction session  
+
+**Role Context & Expectations** 
+
+- Development onboarding plan preview  
+- Sample Jira tickets and workflows shared  
+- Preferred tech familiarity captured  
+
+**Compliance (Karnataka, India)** 
+
+- Employment declarations initiated  
+- PF (Provident Fund) enrollment data captured  
+- Remote work policy acknowledgment  
+- Secure coding certification assigned (pre-learning)  
+
+**Operational Inputs Captured** 
+
+- Shipping address confirmed  
+- Connectivity readiness assessed  
+- Dev environment preferences captured  
+
+**DOJ Confirmation & Nudges** 
+
+- DOJ reconfirmation  
+- Access and login instructions previewed  
+- Reminder cadence triggered  
+
+**PRE-BOARDING SIGNAL CONSOLIDATION** 
+
+**🤖 Pre-Boarding Intelligence Agent is thinking…** 
+
+All inputs consolidated into structured signals. 
+
+### Pre-Boarding Profile Output 
+
+| **Dimension** | **John** | **Priya** |
+|---------------|----------|-----------|
+| Role Context | Strategic Ops Leadership | Engineering Execution |
+| Compliance Status | In Progress | In Progress |
+| Operational Inputs | Workspace + Exec Tools | Remote Setup |
+| Engagement Score | High | High |
+| Risk Signals | None | None |
+
+**PHASE 2 — ONBOARDING PROFILE CREATION** 
+
 **🤖 Global Onboarding Intake Agent is thinking…** 
 
-Employee profiles enriched with jurisdictional metadata. 
+Creating onboarding profiles using: 
 
-Policy resolution required. 
+- HRIS data  
+- Pre-boarding signals  
+- Compliance inputs  
+- Role-specific context  
+
+### Final Enriched Profiles 
+
+| **Attribute** | **John** | **Priya** |
+|---------------|----------|-----------|
+| Role | VP Operations | Junior Software Engineer |
+| Country | USA | India |
+| Jurisdiction | California | Karnataka |
+| Work Mode | Onsite | Remote |
+| Seniority | Executive | Entry Level |
+| Manager | COO | Engineering Manager |
 
 <br>
 
-Routing to → <strong>Policy Resolution agent </strong> 
+Routing to → **Policy Resolution Agent**
 
 <br>
 
 **🤖 Policy Resolution Agent is thinking…** 
 
-Resolving onboarding policies based on: 
-- jurisdiction 
-- role 
-- seniority 
-- work mode 
+**John — Executive Policies** 
 
-**John — Executive HQ** 
+- I-9 verification  
+- California labor disclosures  
+- Executive governance policy  
+- ERP access control policy  
 
-Policies activated: 
-- I-9 verification 
-- California labor disclosures 
-- Executive governance policy 
-- ERP access controls 
+**Enablement** 
 
-Enablement required: 
-- Operations dashboards 
-- Executive analytics 
-- Leadership orientation 
+- Operations dashboards  
+- Executive analytics  
+- Leadership orientation  
 
-**Priya — Remote Engineer** 
+**Priya — Engineer Policies** 
 
-Policies activated: 
-- Employment declarations 
-- PF statutory payroll enrollment 
-- Remote work policy 
-- Secure coding certification 
+- Employment declarations  
+- PF enrollment  
+- Remote work policy  
+- Secure coding certification  
 
-Enablement required: 
-- GitHub repository access 
-- Dev environment provisioning 
-- Engineering onboarding training 
+**Enablement** 
 
-**🤖 Policy Resolution Agent is thinking…** 
-
-Compliance and enablement policies resolved. 
+- GitHub access  
+- Dev environment provisioning  
+- Engineering training  
 
 <br>
 
-Routing to → <strong>Integration Mapping agent </strong>
+Routing to → **Integration Mapping Agent**
 
 <br>
 
 **🤖 Integration Mapping Agent is thinking…** 
 
-Mapping enterprise systems required. 
-
-### John — VP Operations 
+###  John — Systems 
 
 | **System** | **Purpose** |
 |------------|-------------|
-| SAP S4 | Operations Dashboards |
-| PowerBI | Operational Analytics |
+| SAP S4 | Operations dashboards |
+| PowerBI | Analytics |
 | Okta | Identity |
-| ServiceNow | Device Provisioning |
+| ServiceNow | Device provisioning |
 | ADP | Payroll |
 | OfficeSpace | Facilities |
 
-### Priya — Software Engineer 
+###  Priya — Systems 
 
 | **System** | **Purpose** |
 |------------|-------------|
 | Okta | Identity |
-| GitHub | Source Code |
-| Jira | Development tasks |
-| ServiceNow | Device Provisioning |
+| GitHub | Source control |
+| Jira | Task tracking |
+| ServiceNow | Device provisioning |
 | Cornerstone | Learning |
 
-**🤖 Integration Mapping Agent is thinking…** 
-
-System dependency graph constructed. 
-
-Pre-boarding orchestration required. 
+Dependency graph constructed. 
 
 <br>
 
-Routing to → <strong>Pre-Boarding Orchestration Agent </strong>
-
-<br>
+**PHASE 3 — PRE-BOARDING EXECUTION (SYSTEM ORCHESTRATED)** 
 
 **🤖 Pre-Boarding Orchestration Agent is thinking…** 
 
-Creating cross-functional onboarding workflow. 
-
-Offer Acceptance → <strong>DOJ </strong>
-
-### Pre-Boarding Task Matrix 
+### Task Matrix 
 
 | **Function** | **Task** | **John** | **Priya** |
 |--------------|----------|----------|-----------|
-| HR | Employee Record | ✅ | ✅ |
-| HR | Compliance Forms | I-9 | Local Declarations |
+| HR | Employee Record Creation | Completed | Completed |
+| HR | Compliance Forms | I-9 initiated | Declarations submitted |
 | IT | Laptop Provisioning | Executive Laptop | Dev Laptop |
-| IT | System Accounts | ERP Dashboards | Dev Tools |
-| Finance | Payroll | Executive Payroll | Local Payroll |
-| Facilities | Workspace | Executive Office | N/A |
-| Manager | Onboarding Plan | Ops Strategy Brief | Dev Onboarding Plan |
+| IT | System Accounts | ERP + Analytics | Dev Stack |
+| Finance | Payroll Setup | Executive Payroll | Local Payroll |
+| Facilities | Workspace | Office Assigned | N/A |
+| Manager | Plan | Strategy Brief Ready | Dev Plan Ready |
 
 ### Readiness Dashboard 
 
@@ -190,207 +292,104 @@ Offer Acceptance → <strong>DOJ </strong>
 | Finance | 🟢 | 🟢 |
 | Manager Plan | 🟠 Pending | 🟢 |
 
-**⚠ EWS Trigger** 
+**Early Warning Signal** 
 
-Executive device shipment delay predicted. 
-
-<br>
-
-**🤖 Pre-Boarding Orchestration Agent is thinking…** 
-
-Operational risk detected. 
-
-<br>
-
-Routing to → <strong>IT Provisioning Agent </strong>
-
-<br>
+Executive laptop shipment delay predicted. 
 
 **🤖 IT Provisioning Agent is thinking…** 
 
-Action: 
-- Notify IT Ops 
-- Escalate vendor shipment 
-- Provide pickup option 
+- Vendor notified  
+- Shipment escalated  
+- Pickup option arranged  
 
-Issue mitigated. 
-
-<br>
-
-Routing to → <strong>DOJ Readiness Agent </strong>
+Issue resolved. 
 
 <br>
+
+**PHASE 4 — DAY OF JOINING (DOJ)** 
 
 **🤖 Day-of-Joining Agent is thinking…** 
 
-Checking **Day-1 readiness.** 
-
-### Day-1 Dashboard 
+### Day-1 Readiness Dashboard 
 
 | **Dimension** | **John** | **Priya** |
 |---------------|----------|-----------|
-| Email | ✅ | ✅ |
-| Laptop | ✅ | ✅ |
-| Security Access | ✅ | ✅ |
-| Compliance Docs | ✅ | ✅ |
+| Email | Active | Active |
+| Laptop | Delivered | Delivered |
+| Security Access | Granted | Granted |
+| Compliance Docs | Completed | Completed |
 | Orientation | Scheduled | Scheduled |
 
-**🤖 Day-of-Joining Agent is thinking…** 
-
-Day-1 readiness verified. 
-
-<br>
-
-Routing to → <strong>Avatar Experience Agent </strong>
-
-<br>
-
 **🤖 Avatar Experience Agent is thinking…** 
-
-KAYA Avatar provides personalized onboarding. 
-
-<br>
 
 **John — Executive Orientation** 
 
-Avatar walkthrough includes: 
-- enterprise operations overview 
-- supply chain architecture 
-- executive governance framework 
-- ERP analytics introduction 
+- Enterprise operations overview  
+- Supply chain architecture  
+- Executive governance  
+- ERP analytics  
 
 **Priya — Developer Orientation** 
 
-Avatar walkthrough includes: 
-- development environment setup 
-- Git workflow introduction 
-- engineering standards 
-- security coding practices 
+- Dev environment setup  
+- Git workflow  
+- Coding standards  
+- Security practices  
 
-**⚠ LIVE INCIDENT — Executive Access Failure** 
+**Incident — John SAP Access Failure** 
 
-<br>
-
-**🤖 Avatar Experience Agent is thinking…** 
-
-John opens **SAP Operations Dashboard**. 
-
-Access denied. 
-
-<br>
-
-**System flags**
-- Role mismatch 
-- ERP privilege missing 
-
-⚠ **Operational Access Risk Detected**
-
-<br>
-
-**🤖 Avatar Experience Agent is thinking…** 
-
-Identity remediation required. 
-
-<br>
-
-Routing to → <strong>Identity Provisioning Agent </strong>
-
-<br>
+- Role mismatch  
+- Missing privilege  
 
 **🤖 Identity Provisioning Agent is thinking…** 
 
-Actions executed: 
-- Sync Okta executive role 
-- Update SAP authorization 
-- Validate access 
+- Okta role synchronized  
+- SAP authorization updated  
+- Access validated  
 
-Within minutes: 
-
-John successfully accesses **Operations Command Center.** 
-
-Incident resolved. 
-
-Audit record created. 
+Issue resolved. 
+Audit logged. 
 
 <br>
 
-Routing to → <strong>Ramp Acceleration Agent </strong>
+**PHASE 5 — RAMP (0–30 DAYS)** 
 
-<br>
+**🤖 Ramp Acceleration Agent is thinking…** 
 
-**🤖 DOJ +15 Ramp Agent is thinking…** 
-
-Accelerating employee productivity. 
-
-### Ramp Tasks 
+### Tasks 
 
 | **Function** | **Task** | **John** | **Priya** |
 |--------------|----------|----------|-----------|
-| Manager | First Deliverable | Ops Improvement Roadmap | Feature Development |
+| Manager | First Deliverable | Ops Roadmap | Feature Development |
 | Learning | Training | Ops Analytics | Dev Stack |
-| HR | Sentiment Pulse | ✅ | ✅ |
-| IT | Tool Enablement | ERP Analytics | IDE Setup |
+| HR | Sentiment Pulse | Completed | Completed |
+| IT | Tool Enablement | ERP Tools | IDE Setup |
 
-**⚠ LIVE INCIDENT — Developer Repo Access Failure** 
+**Incident — Priya GitHub Access Failure** 
 
-<br>
-
-**🤖 Ramp Acceleration Agent is thinking…** 
-
-Priya attempts first repository pull. 
-
-GitHub access denied. 
-
-**System flags** 
-- Repository permission missing 
-- Dev environment incomplete 
-
-⚠ Engineering Access Risk 
-
-<br>
-
-**🤖 Ramp Acceleration Agent is thinking…** 
-
-DevOps remediation required. 
-
-<br>
-
-Routing to → <strong>DevOps Access Agent </strong>
-
-<br>
+- Missing repo permissions  
+- Incomplete environment  
 
 **🤖 DevOps Access Agent is thinking…** 
 
-Actions executed: 
-- Update GitHub organization role 
-- Sync Okta developer identity 
-- Refresh repository permissions 
+- GitHub role updated  
+- Okta sync executed  
+- Permissions refreshed  
 
-Within minutes: 
-
-Priya performs successful repository pull. 
-
-Development environment validated. 
-
-Incident closed. 
-
-Audit entry created. 
+Issue resolved. 
+Audit logged. 
 
 <br>
 
-Routing to → <strong>Productivity Monitoring Agent </strong>
+**PHASE 6 — PRODUCTIVITY MONITORING (30–60–90)** 
 
-<br>
-
-**🤖 30-60-90 Monitoring Agent is thinking…** 
-
-Tracking productivity ramp. 
+**🤖 Productivity Monitoring Agent is thinking…** 
 
 ### 30-Day Check 
 
 | **Metric** | **John** | **Priya** |
 |------------|----------|-----------|
-| Training Completion | ✅ | ✅ |
+| Training Completion | Completed | Completed |
 | System Usage | High | Moderate |
 | Manager Feedback | Positive | Positive |
 
@@ -398,51 +397,39 @@ Tracking productivity ramp.
 
 | **Metric** | **John** | **Priya** |
 |------------|----------|-----------|
-| Team integration | Strong | Good |
-| Ownership | ✅ | ✅ |
+| Team Integration | Strong | Good |
+| Ownership | Demonstrated | Demonstrated |
 
 ### 90-Day Check 
 
 | **Metric** | **John** | **Priya** |
 |------------|----------|-----------|
 | Productivity Baseline | Achieved | Achieved |
-| Onboarding Completion | ✅ | ✅ |
+| Onboarding Completion | Completed | Completed |
 
-Status: **Ramp Successful** 
-
-<br>
-
-Routing to → <strong>Exception Management Agent </strong>
-
-<br>
+**EXCEPTION MANAGEMENT** 
 
 **🤖 Exception Management Agent is thinking…** 
 
-Agent continuously monitors onboarding disruptions. 
+### Exception Scenarios & Resolutions 
 
-### Examples detected across organization 
+| **Exception** | **Detection** | **Resolution** |
+|---------------|---------------|----------------|
+| DOJ Change | Candidate input / HR update | Re-sequence onboarding tasks |
+| Background Verification Issue | BGV system flag | Pause onboarding until cleared |
+| Device Shipment Delay | IT tracking | Vendor escalation + alternate device |
+| Compliance Incomplete | HR compliance tracker | Automated reminders + escalation |
+| Manager Plan Missing | Manager SLA breach | HRBP escalation |
+| Remote Environment Failure | IT diagnostics | Remote troubleshooting workflow |
+| Workspace Unavailable | Facilities system | Temporary desk allocation |
 
-| **Exception** | **Resolution** |
-|---------------|----------------|
-| DOJ change | Reschedule Onboarding Tasks |
-| Background Verification Issue | Pause Onboarding |
-| Device Shipment Delay | Escalate IT Vendor |
-| Compliance Incomplete | HR Reminder Workflow |
-| Manager Onboarding Plan Missing | HRBP Escalation |
-| Remote Environment Failure | IT Remediation Workflow |
-| Workspace Unavailable | Temporary Desk Allocation |
-
-All incidents tracked in **exception dashboard**. 
+All incidents tracked in centralized exception dashboard. 
 
 <br>
 
-Routing to → <strong>Operations Command Center Agent </strong>
+**OPERATIONS COMMAND CENTER** 
 
-<br>
-
-**🧭 Operations Command Center Dashboard** 
-
-Enterprise onboarding oversight. 
+**🤖 Operations Command Center Agent is thinking…** 
 
 ### Global Dashboard 
 
@@ -450,58 +437,55 @@ Enterprise onboarding oversight.
 |---------|-----------|
 | Employees Onboarding | 148 |
 | Day-1 Readiness | 95% |
-| Average Onboarding Completion | 24 days |
+| Avg Completion Time | 24 days |
 | Ramp Success Rate | 92% |
 
-### Risk Signals 
+###  Risk Signals 
 
 | **Risk** | **Count** |
 |----------|-----------|
 | Device Delays | 4 |
-| Access Provisioning Issues | 3 |
+| Access Issues | 3 |
 | Compliance Gaps | 2 |
 
-Agent nudges responsible owners automatically. 
+Automated nudges sent to responsible owners. 
 
 <br>
 
-Routing to → <strong>Governance & Audit Agent </strong>
-
-<br>
+**GOVERNANCE & AUDIT** 
 
 **🤖 Governance & Audit Agent is thinking…** 
 
-All onboarding actions recorded. 
+**Audit Coverage** 
 
-<br>
+- Compliance verification logs  
+- Access provisioning trails  
+- Exception handling history  
+- SLA adherence tracking  
+- Identity governance records  
 
-Audit includes: 
-- compliance verification 
-- access provisioning logs 
-- exception handling history 
-- SLA adherence 
-- identity governance 
+**Supports:** 
 
-Supports: 
-- SOX readiness 
-- HR compliance 
-- access governance 
+- SOX compliance  
+- HR regulatory audits  
+- Access governance audits  
 
 ### FINAL STATE 
 
 | **Employee** | **Status** |
 |--------------|------------|
-| John Miller — VP Operations | 🟢 Onboarding Successful |
-| Priya Sharma — Software Engineer | 🟢 Onboarding Successful |
+| John Miller | Onboarding Successful |
+| Priya Sharma | Onboarding Successful |
 
-**End State** 
+**END STATE** 
 
-- Employees: Productive 
-- Systems: Provisioned 
-- Compliance: Verified 
-- Ramp: Completed 
-- Operational Visibility: Continuous 
-- Audit Trail: Immutable 
+- Pre-boarding drives onboarding  
+- Offer → Join conversion optimized  
+- Compliance completed pre-DOJ  
+- Day-1 friction eliminated  
+- Ramp accelerated  
+- Full lifecycle visibility achieved  
+- Immutable audit trail maintained 
 `,
     },
   ])
