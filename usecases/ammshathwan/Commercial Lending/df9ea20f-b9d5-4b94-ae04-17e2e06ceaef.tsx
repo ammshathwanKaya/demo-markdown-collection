@@ -16,22 +16,16 @@ localStorage.setItem(
 
 > Listening for new commercial lending applications...
 
-<br>
 
 ## Activated Agents:
-- Intake Agent  
-- Plan Resolution Agent  
-- Compliance Lookup Agent  
-- Financial Spreading Agent  
-- Borrower Assessment Agent  
-- Policy Agent  
-- Risk Grade Agent  
-- Pricing Agent  
-- Approval Routing Agent  
-- Documentation Agent
-- Closing Agent  
-- Monitoring Agent  
-- Audit Agent
+
+| **Initiation & Planning** | **Assessment & Compliance** | **Execution & Oversight** |
+|---------------------------|----------------------------|--------------------------|
+| Intake Agent | Compliance Lookup Agent | Pricing Agent |
+| Plan Resolution Agent | Financial Spreading Agent | Approval Routing Agent |
+| Borrower Assessment Agent | Policy Agent | Documentation Agent |
+| Risk Grade Agent | Monitoring Agent | Closing Agent |
+| Audit Agent | | |
 
 # DESIGN PRINCIPLE USED THROUGHOUT
 
@@ -46,13 +40,14 @@ Perform fresh deterministic calculations inside the iFlow.
 ## INFER 
 Apply approved rules/logic to reach controlled conclusions.
 
-# STEP 1 — APPLICATION INTAKE + ELIGIBILITY
+<br>
 
 ---
 
+# STEP 1 — APPLICATION INTAKE + ELIGIBILITY
+
 🤖 **Intake Agent is thinking...**
 
-<br>
 
 ## GET
 - Loan application payload (Loan Origination System)  
@@ -428,10 +423,11 @@ US Middle Market Equipment Finance – Version 4.2
 
 > Handing over to Human Approver...
 
-<br>
-
----
-
+`,
+    },
+    {
+      message: "Approve",
+      response: `
 # STEP 9 — HUMAN APPROVAL
 
 🤖 **Regional Credit Officer reviewing...**
@@ -481,15 +477,12 @@ US Middle Market Equipment Finance – Version 4.2
 - Insert collateral schedules  
 - Infer clause pack
 
-# ON-SCREEN ARTEFACTS 
+**ON-SCREEN ARTEFACTS** 
 
-## ON-SCREEN ARTEFACT 1
+<details>
+  <summary>ON-SCREEN ARTEFACT 1 - CREDIT APPROVAL MEMORANDUM (Internal Credit Decision Pack)</summary>
 
-**CREDIT APPROVAL MEMORANDUM**
-
-**(Internal Credit Decision Pack)**
-
-**CONFIDENTIAL CREDIT APPROVAL MEMORANDUM**
+## CONFIDENTIAL CREDIT APPROVAL MEMORANDUM
 
 ### Borrower
 Precision Aerospace Components, LLC (“PAC”)
@@ -561,19 +554,14 @@ Approve as proposed subject to standard documentation and closing conditions.
 
 Regional Credit Officer
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_1.pdf">On-Screen_Artefact_1.pdf</a>
 
----
+</details>
 
-## ON-SCREEN ARTEFACT 2
+<details>
+  <summary>ON-SCREEN ARTEFACT 2 - COMMITMENT LETTER (Borrower-Facing)</summary>
 
-**COMMITMENT LETTER**
-
-(Borrower-Facing)
-
-**COMMITMENT LETTER**
-
-**Date: 27 April 2026**
+## Date: 27 April 2026
 
 ### To: Precision Aerospace Components, LLC
 We are pleased to advise that the Bank is prepared to extend credit facilities to Precision Aerospace Components, LLC, subject to execution of definitive documentation and satisfaction of conditions precedent, on the following principal terms:
@@ -607,13 +595,12 @@ This commitment expires unless accepted within 30 days.
 **Authorized Signatory,**
 Regional Credit Officer 
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_2.pdf">On-Screen_Artefact_2.pdf</a>
 
----
+</details>
 
-## ON-SCREEN ARTEFACT 3
-
-**TERM SHEET**
+<details>
+  <summary>ON-SCREEN ARTEFACT 3 - TERM SHEET</summary>
 
 ### Commercial Terms
 | Category        | Detail                          |
@@ -637,15 +624,14 @@ Regional Credit Officer
 | Late Charges     | Per agreement          |
 | Governing Law    | New York               |
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_3.pdf">On-Screen_Artefact_3.pdf</a>
 
----
+</details>
 
-## ON-SCREEN ARTEFACT 4
+<details>
+  <summary>ON-SCREEN ARTEFACT 4 - FINANCIAL COVENANT SCHEDULE</summary>
 
-**FINANCIAL COVENANT SCHEDULE**
-
-**COVENANT SCHEDULE**
+## COVENANT SCHEDULE
 
 The Borrower shall maintain the following covenants at all times unless otherwise waived in writing by the Bank.
 | Covenant                        | Requirement                 | Test      |
@@ -659,11 +645,12 @@ The Borrower shall maintain the following covenants at all times unless otherwis
 ### Covenant Breach Protocol
 Failure to comply may result in reservation of rights, pricing step-up, waiver process, or event of default depending on severity.
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_4.pdf">On-Screen_Artefact_4.pdf</a>
 
-## ON-SCREEN ARTEFACT 5
+</details>
 
-**SECURITY AGREEMENT SUMMARY**
+<details>
+  <summary>ON-SCREEN ARTEFACT 5 - SECURITY AGREEMENT SUMMARY</summary>
 
 ### SECURITY PACKAGE
 As continuing collateral security for all obligations, Borrower grants the Bank a first priority security interest in the following assets:
@@ -685,13 +672,12 @@ As continuing collateral security for all obligations, Borrower grants the Bank 
 - Insurance loss payee notation  
 - Serial number schedules completed
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_5.pdf">On-Screen_Artefact_5.pdf</a>
 
----
+</details>
 
-## ON-SCREEN ARTEFACT 6
-
-**QUARTERLY COMPLIANCE CERTIFICATE**
+<details>
+  <summary>ON-SCREEN ARTEFACT 6 - QUARTERLY COMPLIANCE CERTIFICATE</summary>
 
 ### COMPLIANCE CERTIFICATE
 The undersigned certifies that as of quarter-end, the Borrower is in compliance with the Loan Agreement.
@@ -706,13 +692,12 @@ Authorized Officer Signature: ___________
 
 Date: ___________ 
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_6.pdf">On-Screen_Artefact_6.pdf</a>
 
----
+</details>
 
-## ON-SCREEN ARTEFACT 7
-
-**LOAN BOOKING INSTRUCTION**
+<details>
+  <summary>ON-SCREEN ARTEFACT 7 - LOAN BOOKING INSTRUCTION</summary>
 
 ### BOOKING INSTRUCTION SHEET
 
@@ -734,7 +719,10 @@ Prepared by: Documentation Agent
 
 Verified by: Loan Operations 
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1aOBRgq8eIVDtyj2CioWXHrFB7FH_0uNn" download="On-Screen_Artefact_7.pdf">On-Screen_Artefact_7.pdf</a>
+
+
+</details>
 
 ### DECISION SIGNALS + BASIS
 | Signal               | Value     | Basis                      |
@@ -835,20 +823,21 @@ Verified by: Loan Operations
 <br>
 
 ## CONSOLIDATED AUDIT TRAIL
+
 | Date       | Step           | Event                         | Decision / Output | Owner              |
 |------------|----------------|-------------------------------|------------------|--------------------|
-| 27 Apr 2026 | Intake        | Application received          | Accepted         | Intake Agent       |
-| 27 Apr 2026 | Plan          | Workflow selected             | MM Equipment v4.2 | Plan Agent         |
-| 27 Apr 2026 | Compliance    | KYC / AML cleared             | Proceed          | Compliance Agent   |
-| 28 Apr 2026 | Spreading     | EBITDA / FCCR complete        | 1.35x FCCR       | Financial Agent    |
-| 28 Apr 2026 | Underwriting  | 5C complete                   | Raw Score 2.25   | Assessment Agent   |
-| 29 Apr 2026 | Policy        | Appetite tests passed         | No waivers       | Policy Agent       |
-| 29 Apr 2026 | Grade         | Internal rating assigned      | Grade 2          | Risk Agent         |
-| 29 Apr 2026 | Pricing       | Spread built                  | 190 bps          | Pricing Agent      |
-| 30 Apr 2026 | Approval      | Credit sanctioned             | Approved         | RCO                |
-| 01 May 2026 | Documentation | Final docs issued             | v1.0             | Docs Agent         |
-| 02 May 2026 | Funding       | Facility booked + funded      | $8M              | Closing Agent      |
-| 03 May 2026 | Monitoring    | Surveillance active           | Quarterly        | Monitoring Agent   |
+| 18 Apr 2026 | Intake        | Application received          | Accepted         | Intake Agent       |
+| 18 Apr 2026 | Plan          | Workflow selected             | MM Equipment v4.2 | Plan Agent         |
+| 18 Apr 2026 | Compliance    | KYC / AML cleared             | Proceed          | Compliance Agent   |
+| 19 Apr 2026 | Spreading     | EBITDA / FCCR complete        | 1.35x FCCR       | Financial Agent    |
+| 19 Apr 2026 | Underwriting  | 5C complete                   | Raw Score 2.25   | Assessment Agent   |
+| 20 Apr 2026 | Policy        | Appetite tests passed         | No waivers       | Policy Agent       |
+| 20 Apr 2026 | Grade         | Internal rating assigned      | Grade 2          | Risk Agent         |
+| 20 Apr 2026 | Pricing       | Spread built                  | 190 bps          | Pricing Agent      |
+| 21 Apr 2026 | Approval      | Credit sanctioned             | Approved         | RCO                |
+| 22 Apr 2026 | Documentation | Final docs issued             | v1.0             | Docs Agent         |
+| 23 Apr 2026 | Funding       | Facility booked + funded      | $8M              | Closing Agent      |
+| 24 Apr 2026 | Monitoring    | Surveillance active           | Quarterly        | Monitoring Agent   |
 
 ## DECISION EXPLAINABILITY SNAPSHOT
 | Decision              | Basis                                   |
@@ -893,6 +882,7 @@ Case Archived
 | Funded      | Yes                                  |
 | Monitoring  | Active                               |
 | Auditability| Full Replayable                      |
+ 
 `,
     },
     // Scenario 2
@@ -912,21 +902,14 @@ Mode: Deterministic Plan + Execute + Replanner
 Case ID: CL-SAM-2026-0427-001
 
 ### Activated Agents:
-- Intake Agent  
-- Data Integrity Agent  
-- Planner Agent  
-- Replanner Agent  
-- Compliance Agent  
-- Financial Spreading Agent  
-- Borrower Assessment Agent  
-- Policy Agent  
-- Risk Grade Agent  
-- Pricing Agent  
-- Approval Routing Agent  
-- Documentation Agent  
-- Closing Agent  
-- Monitoring Agent  
-- Audit Agent
+
+| **Initiation & Planning** | **Assessment & Compliance** | **Execution & Oversight** |
+|---------------------------|----------------------------|--------------------------|
+| Intake Agent | Compliance Agent | Pricing Agent |
+| Data Integrity Agent | Financial Spreading Agent | Approval Routing Agent |
+| Planner Agent | Borrower Assessment Agent | Documentation Agent |
+| Replanner Agent | Policy Agent | Closing Agent |
+| Risk Grade Agent | Monitoring Agent | Audit Agent |
 
 ---
 
@@ -986,20 +969,12 @@ From Loan Origination System:
 
 🤖 **Planner Agent is thinking...**
 
-<br>
+### Primary Plan Selected:
+US Middle Market Equipment Finance v4.2
 
-<div>
-  <div>Primary Plan Selected:</div>
-  <div>US Middle Market Equipment Finance v4.2</div>
-</div>
-
-<br>
-
-<div>
-  <div>Sub-Plans Loaded:</div>
-  <div>1. Financial Proxy Evidence v1.1</div>
-  <div>2. Temporary Collateral Haircut v1.0</div>
-</div>
+### Sub-Plans Loaded:
+  1. Financial Proxy Evidence v1.1
+  2. Temporary Collateral Haircut v1.0
 
 ## SO WHAT
 - Standard path retained with fallback options.
@@ -1162,15 +1137,16 @@ SOFR 3.65% + 2.05% = 5.70%
   <div>Rate = 5.60%</div>
 </div>
 
-<br>
-
 ## SO WHAT
 - Bank paid for temporary uncertainty.
 
 ## NOW WHAT
 - Route to approver.
-
----
+`,
+    },
+    {
+      message: "Approved",
+      response: `
 
 # STEP 11 — APPROVAL ROUTING + HUMAN APPROVAL
 
@@ -1200,11 +1176,12 @@ Generated:
 - Reporting Addendum  
 - Booking Instructions
 
-## ON-SCREEN ARTEFACT 1
+**ON-SCREEN ARTEFACTS** 
 
-CREDIT APPROVAL MEMORANDUM (SUMMIT) 
+<details>
+  <summary>ON-SCREEN ARTEFACT 1 - CREDIT APPROVAL MEMORANDUM (SUMMIT)</summary>
 
-CONFIDENTIAL CREDIT APPROVAL MEMORANDUM
+## CONFIDENTIAL CREDIT APPROVAL MEMORANDUM
 
 ### Borrower
 Summit Aero Manufacturing, LLC
@@ -1233,15 +1210,16 @@ Approve $8,000,000 Senior Secured Equipment Term Loan subject to post-approval c
 - Signed interim statements within 10 business days  
 - Updated appraisal within 30 calendar days
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1cP7BO8TB4o1TuCb4UCH5zyxfs1hUeo7x" download="On-Screen_Artefact_1.pdf">On-Screen_Artefact_1.pdf</a>
 
-## ON-SCREEN ARTEFACT 2
+</details>
 
-COMMITMENT LETTER (SUMMIT) 
+<details>
+  <summary>ON-SCREEN ARTEFACT 2 - COMMITMENT LETTER (SUMMIT)</summary>
 
-COMMITMENT LETTER
+## COMMITMENT LETTER
 
-To: Summit Aero Manufacturing, LLC
+### To: Summit Aero Manufacturing, LLC
 
 The Bank is pleased to extend the following commitment subject to definitive documentation and the conditions below.
 
@@ -1258,13 +1236,14 @@ The Bank is pleased to extend the following commitment subject to definitive doc
 - Borrower to deliver refreshed third-party appraisal within 30 days of closing  
 - Failure to cure may result in pricing retention or further lender action
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1cP7BO8TB4o1TuCb4UCH5zyxfs1hUeo7x" download="On-Screen_Artefact_2.pdf">On-Screen_Artefact_2.pdf</a>
 
-## ON-SCREEN ARTEFACT 3
+</details>
 
-COVENANT / REPORTING ADDENDUM (SUMMIT) 
+<details>
+  <summary>ON-SCREEN ARTEFACT 3 - COVENANT / REPORTING ADDENDUM (SUMMIT)</summary>
 
-TEMPORARY REPORTING ADDENDUM 
+## TEMPORARY REPORTING ADDENDUM 
 
 Until all cure items are satisfied:
 | Requirement                 | Frequency |
@@ -1277,13 +1256,14 @@ Until all cure items are satisfied:
 ### Upon cure completion:
 - Reporting cadence reverts to standard quarterly package.  
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1cP7BO8TB4o1TuCb4UCH5zyxfs1hUeo7x" download="On-Screen_Artefact_3.pdf">On-Screen_Artefact_3.pdf</a>
 
-## ON-SCREEN ARTEFACT 4
+</details>
 
-POST-CLOSE CURE TRACKER 
+<details>
+  <summary>ON-SCREEN ARTEFACT 4 - POST-CLOSE CURE TRACKER</summary>
 
-POST-CLOSE CONDITION TRACKER
+## POST-CLOSE CONDITION TRACKER
 
 | Item                          | Due Date      | Owner                 | Status  |
 |-------------------------------|--------------|-----------------------|---------|
@@ -1291,13 +1271,14 @@ POST-CLOSE CONDITION TRACKER
 | Updated Appraisal             | +30 CD       | Borrower / Appraiser | Open    |
 | Margin Step-down Trigger Review| Upon completion | Loan Ops           | Pending |
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1cP7BO8TB4o1TuCb4UCH5zyxfs1hUeo7x" download="On-Screen_Artefact_4.pdf">On-Screen_Artefact_4.pdf</a>
 
-## ON-SCREEN ARTEFACT 5
+</details>
 
-BOOKING INSTRUCTION (SUMMIT) 
+<details>
+  <summary>ON-SCREEN ARTEFACT 5 - BOOKING INSTRUCTION (SUMMIT)</summary>
 
-BOOKING INSTRUCTION
+## BOOKING INSTRUCTION
 
 | Field         | Value                          |
 |--------------|--------------------------------|
@@ -1307,7 +1288,9 @@ BOOKING INSTRUCTION
 | Monitoring Tier | Enhanced Temporary          |
 | Review Date   | Monthly                        |
 
-📄 Export: Word / PDF
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=1cP7BO8TB4o1TuCb4UCH5zyxfs1hUeo7x" download="On-Screen_Artefact_5.pdf">On-Screen_Artefact_5.pdf</a>
+
+</details>
 
 ### SO WHAT
 - Decision converted into executable documents.
@@ -1369,21 +1352,21 @@ Borrower subsequently provides:
 ## STEP 15 — CONSOLIDATED AUDIT TRAIL
 | Date       | Step          | Event                                                | Decision / Output         | Owner                  |
 |------------|--------------|------------------------------------------------------|---------------------------|------------------------|
-| 27 Apr 2026 | Intake       | Application received                                | Accepted                  | Intake Agent           |
-| 27 Apr 2026 | Data Review  | Missing interims + stale appraisal detected          | Recoverable               | Data Integrity Agent   |
-| 27 Apr 2026 | Planning     | Primary plan + sub-plans selected                    | Ready to execute         | Planner Agent          |
-| 28 Apr 2026 | Compliance   | KYC / AML / Ownership checked                        | Cleared                  | Compliance Agent       |
-| 28 Apr 2026 | Replanner    | Standard path blocked by missing interims            | Alternate path invoked   | Replanner Agent        |
-| 29 Apr 2026 | Spreading    | Proxy EBITDA / FCCR calculated                       | FCCR 1.26x               | Financial Agent        |
-| 29 Apr 2026 | Underwriting | 5C scorecard completed                               | Grade 2                  | Assessment Agent       |
-| 30 Apr 2026 | Policy       | Appetite / thresholds tested                         | Passed                   | Policy Agent           |
-| 30 Apr 2026 | Pricing      | Risk-adjusted pricing built                          | 205 bps / 5.70%          | Pricing Agent          |
-| 01 May 2026 | Approval     | Conditional sanction granted                         | Approved                 | Regional Credit Officer|
-| 04 May 2026 | Documentation| Docs generated and issued                            | Ready to close          | Documentation Agent    |
-| 05 May 2026 | Funding      | Facility booked and funded                           | $8M released             | Closing Agent          |
-| 15 May 2026 | Cure 1       | Interim statements received                          | Pending final cure       | Monitoring Agent       |
-| 28 May 2026 | Cure 2       | Updated appraisal received                           | All cure items complete  | Monitoring Agent       |
-| 01 Jun 2026 | Repricing    | Margin reduced                                       | 195 bps / 5.60%          | Ops Agent              |
+| 20 Mar 2026 | Intake       | Application received                                | Accepted                  | Intake Agent           |
+| 20 Mar 2026 | Data Review  | Missing interims + stale appraisal detected          | Recoverable               | Data Integrity Agent   |
+| 20 Mar 2026 | Planning     | Primary plan + sub-plans selected                    | Ready to execute         | Planner Agent          |
+| 21 Mar 2026 | Compliance   | KYC / AML / Ownership checked                        | Cleared                  | Compliance Agent       |
+| 21 Mar 2026 | Replanner    | Standard path blocked by missing interims            | Alternate path invoked   | Replanner Agent        |
+| 22 Mar 2026 | Spreading    | Proxy EBITDA / FCCR calculated                       | FCCR 1.26x               | Financial Agent        |
+| 22 Mar 2026 | Underwriting | 5C scorecard completed                               | Grade 2                  | Assessment Agent       |
+| 23 Mar 2026 | Policy       | Appetite / thresholds tested                         | Passed                   | Policy Agent           |
+| 23 Mar 2026 | Pricing      | Risk-adjusted pricing built                          | 205 bps / 5.70%          | Pricing Agent          |
+| 24 Mar 2026 | Approval     | Conditional sanction granted                         | Approved                 | Regional Credit Officer|
+| 27 Mar 2026 | Documentation| Docs generated and issued                            | Ready to close          | Documentation Agent    |
+| 28 Mar 2026 | Funding      | Facility booked and funded                           | $8M released             | Closing Agent          |
+| 07 Apr 2026 | Cure 1       | Interim statements received                          | Pending final cure       | Monitoring Agent       |
+| 20 Apr 2026 | Cure 2       | Updated appraisal received                           | All cure items complete  | Monitoring Agent       |
+| 24 Apr 2026 | Repricing    | Margin reduced                                       | 195 bps / 5.60%          | Ops Agent              |
 
 ## FINAL OUTCOME
 | Metric         | Result                          |
@@ -1399,8 +1382,8 @@ Borrower subsequently provides:
 
 Commercial Lending Lifecycle Completed Successfully 
 
-Audit Vault Updated 
-`
+Audit Vault Updated
+`,
     },
     // Scenario 3
     {
@@ -1411,31 +1394,21 @@ Audit Vault Updated
 > Commercial Lending Orchestrator Initialized 
 
 > Mode: Deterministic Credit Workflow + Replanner + Mandatory HITL
-  
+
 > Case ID: CL-VAC-2026-0427-001 
 
 <br>
 
 **Activated Agents:** 
 
-- Intake Agent  
-- Plan Resolution Agent  
-- Compliance Lookup Agent  
-- Financial Spreading Agent  
-- Borrower Assessment Agent  
-- Policy Agent  
-- Sector Intelligence Agent  
-- Customer Concentration Stress Agent  
-- Demand Outlook Agent  
-- Adverse Media Review Agent  
-- Replanner Agent  
-- Structuring Agent  
-- Pricing Agent  
-- Human Review Coordinator Agent  
-- Documentation Agent  
-- Closing Agent  
-- Monitoring Agent  
-- Audit Agent  
+| **Onboarding & Assessment** | **Risk & Compliance** | **Execution & Oversight** |
+|----------------------------|----------------------|--------------------------|
+| Intake Agent | Compliance Lookup Agent | Structuring Agent |
+| Plan Resolution Agent | Financial Spreading Agent | Pricing Agent |
+| Borrower Assessment Agent | Policy Agent | Documentation Agent |
+| Sector Intelligence Agent | Customer Concentration Stress Agent | Closing Agent |
+| Demand Outlook Agent | Adverse Media Review Agent | Monitoring Agent |
+| Replanner Agent | Human Review Coordinator Agent | Audit Agent |
 
 ### DESIGN PRINCIPLES 
 
@@ -1868,10 +1841,10 @@ Base plan covers:
 | Maintenance CapEx / tax distributions / fixed uses | $0.78M | Spread adjustments |
 | CFADS | $1.42M | EBITDA less fixed uses |
 | Annual debt service on requested structure | $1.20M | Existing + proposed amortizing debt |
-| FCCR | 1.18x | $1.42M / $1.20M |
+| FCCR | 1.18x | 1.42M / 1.20M |
 | Total liabilities / tangible net worth | 1.42x | Balance sheet spread |
 | Appraised OLV | $10.13M | Appraisal |
-| LTV | 79% | $8M / $10.13M |
+| LTV | 79% | 8M / 10.13M |
 
 **DECISION SIGNALS + BASIS** 
 
@@ -2309,7 +2282,7 @@ Identify whether a modified structure can:
 | B | Reduce hold to $6.5M | $6.5M | 1.29x | Passes FCCR | Better |
 | C | $8M with 12-month interest-only | $8.0M | 1.31x Yr1 | Transitional pass | Short-term fix |
 | D | $8M with owner guarantee + cash sweep | $8.0M | 1.18x but mitigated | Exception | Moderate |
-| E | $6.5M now + $1.5M accordion | $6.5M now | 1.29x now | Passes now | Best balance |
+| E | 6.5M now + 1.5M accordion | $6.5M now | 1.29x now | Passes now | Best balance |
 | F | Decline | $0 | N/A | No risk | Conservative |
 
 **OPTION CALCULATION EXAMPLES** 
@@ -2414,7 +2387,7 @@ Identify whether a modified structure can:
 | B | $6.5M reduced hold | 245 bps | 6.10% | FCCR improves to 1.29x |
 | C | $8M 12-month IO | 260 bps | 6.25% | First-year coverage improves, but later risk remains |
 | D | $8M guarantee + sweep | 235 bps | 6.00% | Sponsor support reduces loss severity |
-| E | $6.5M + $1.5M accordion | 245 bps | 6.10% | Balanced exposure control + future upside |
+| E | 6.5M + 1.5M accordion | 245 bps | 6.10% | Balanced exposure control + future upside |
 | F | Decline | N/A | N/A | No pricing |
 
 **PRICING BUILD FOR OPTION E** 
@@ -2455,8 +2428,122 @@ SOFR 3.65% + 2.45% = 6.10%
 - Build HITL decision support pack.  
 
 > Handing over to Human Review Coordinator Agent... 
-
----
+`,
+      apiCalls: [
+        {
+          name: "sendEmail",
+          trigger: "after",
+          buttonId: "email",
+          response: "Approval request initiated successfully",
+          method: "POST",
+          url: "https://kaya-mock-api-938786674786.us-central1.run.app/health-first/email",
+          headers: {
+            accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          bodyTemplate: `{
+        "subject": "Approval Request – VAC | Suggested Credit Structure",
+        "to": ["sandaruwan@kayatech.com"],
+        "content": "<div style='background-color:#F3F4F6;padding:24px;font-family:Arial,Helvetica,sans-serif;'>\
+          <table width='100%' cellpadding='0' cellspacing='0' style='max-width:720px;margin:0 auto;background-color:#FFFFFF;border-radius:8px;'>\
+            <tr><td style='padding:24px;color:#111827;font-size:14px;line-height:1.6;'>\
+              <p>Dear Approver,</p>\
+              <p>Please review the below approval request for <strong>Vector Aero Components, LLC (VAC)</strong> following completion of the KAYA deterministic credit assessment workflow.</p>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>About the Client</h3>\
+              <table width='100%' cellpadding='6' cellspacing='0' style='border-collapse:collapse;'>\
+                <tr><td><strong>Borrower:</strong></td><td>Vector Aero Components, LLC</td></tr>\
+                <tr><td><strong>Industry:</strong></td><td>Aerospace Components Manufacturing</td></tr>\
+                <tr><td><strong>Relationship:</strong></td><td>Existing operating account customer</td></tr>\
+                <tr><td><strong>Request:</strong></td><td>USD 8.0MM equipment finance facility for CNC machinery expansion</td></tr>\
+                <tr><td><strong>Risk Status:</strong></td><td>Structurable opportunity requiring approval review</td></tr>\
+              </table>\
+              <p style='margin-top:10px;'>🔗 <a href='#'>Open Full Borrower Summary</a></p>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>Key Credit Highlights</h3>\
+              <p><strong>Positives</strong></p>\
+              <ul style='padding-left:18px;'>\
+                <li>Profitable operating business with active OEM customer relationships</li>\
+                <li>Confirmed purchase backlog and approved supplier status</li>\
+                <li>Collateral coverage within policy range</li>\
+                <li>No AML / sanctions concerns identified</li>\
+              </ul>\
+              <p><strong>Key Risks</strong></p>\
+              <ul style='padding-left:18px;'>\
+                <li>FCCR under original request: 1.18x (below standard comfort level)</li>\
+                <li>Largest customer concentration: 58% of revenue</li>\
+                <li>Near-term aerospace production slowdown / pricing pressure</li>\
+                <li>Historical civil litigation mention (resolved; disclosure only)</li>\
+              </ul>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>Options Evaluated</h3>\
+              <table width='100%' cellpadding='8' cellspacing='0' style='border-collapse:collapse;border:1px solid #E5E7EB;'>\
+                <tr style='background:#F9FAFB;'>\
+                  <th align='left'>Option</th><th align='left'>Structure</th><th align='left'>Suggestion</th><th align='left'>Details</th>\
+                </tr>\
+                <tr><td>A</td><td>Approve original USD 8.0MM request</td><td>Not Preferred</td><td><a href='#'>Option A</a></td></tr>\
+                <tr><td>B</td><td>Approve USD 6.5MM reduced hold</td><td>Viable</td><td><a href='#'>Option B</a></td></tr>\
+                <tr><td>C</td><td>USD 8.0MM with 12-month interest only</td><td>Transitional</td><td><a href='#'>Option C</a></td></tr>\
+                <tr><td>D</td><td>USD 8.0MM with guarantee + cash sweep</td><td>Moderate</td><td><a href='#'>Option D</a></td></tr>\
+                <tr style='background:#ECFDF5;'><td><strong>E</strong></td><td><strong>USD 6.5MM now + USD 1.5MM accordion</strong></td><td><strong>Suggested</strong></td><td><a href='#'>Option E</a></td></tr>\
+                <tr><td>F</td><td>Decline</td><td>Conservative</td><td><a href='#'>Option F</a></td></tr>\
+              </table>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>Suggested Option – Option E</h3>\
+              <ul style='padding-left:18px;'>\
+                <li>USD 6,500,000 initial senior secured equipment term loan</li>\
+                <li>USD 1,500,000 accordion subject to trigger satisfaction</li>\
+                <li>Pricing: SOFR + 245 bps (current all-in approx. 6.10%)</li>\
+                <li>Owner limited guarantee</li>\
+                <li>Monthly enhanced reporting package</li>\
+              </ul>\
+              <p><strong>Why This Option</strong></p>\
+              <ul style='padding-left:18px;'>\
+                <li>Improves repayment coverage vs original request</li>\
+                <li>Reduces immediate bank exposure</li>\
+                <li>Preserves client relationship and growth opportunity</li>\
+                <li>Additional exposure only released upon proven performance</li>\
+                <li>Best balance of risk, return, and client support</li>\
+              </ul>\
+              <p>🔗 <a href='#'>Open Full Option E Analysis</a></p>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>Accordion Release Conditions</h3>\
+              <ul style='padding-left:18px;'>\
+                <li>FCCR ≥ 1.25x</li>\
+                <li>Largest customer concentration &lt; 50%</li>\
+                <li>No payment default / covenant breach</li>\
+                <li>No new material compliance concerns</li>\
+                <li>Updated backlog review acceptable to Bank</li>\
+              </ul>\
+              \
+              <h3 style='margin-top:24px;color:#111827;'>Approval Response Requested</h3>\
+              <p>Please confirm one of the below:</p>\
+              <ul style='padding-left:18px;'>\
+                <li>Approve Suggested Option E</li>\
+                <li>Approve Alternate Option (A / B / C / D / F)</li>\
+                <li>Defer pending additional information</li>\
+                <li>Decline</li>\
+              </ul>\
+              <p>Upon your confirmation, documentation and booking workflows will proceed immediately.</p>\
+              <p style='margin-top:24px;'>Regards,<br/>Credit Team<br/>Acme Bank</p>\
+            </td></tr>\
+          </table>\
+        </div>"
+      }`,
+          waitingConfirmation: true,
+          waitingMessage: "Awaiting Approval Response",
+          confirmationDelay: 10000,
+          confirmationTrigger: "websocket",
+          websocketUrl:
+            "wss://kaya-mock-api-938786674786.us-central1.run.app/health-first/websocket",
+          websocketEvent: "confirmation",
+          confirmationMessage: "Approval Response Received",
+        },
+      ],
+    },
+    {
+      message: "Approval Response Received",
+      response:`
 
 **STEP 11 — HUMAN DECISION SUPPORT PACK** 
 
@@ -2490,7 +2577,7 @@ Search criteria:
 - Aerospace supplier  
 - Revenue concentration >50%  
 - Equipment finance  
-- Loan size $5M–$15M  
+- Loan size 5M–15M  
 - Coverage near / below policy floor  
 
 | **Outcome** | **Count** |
@@ -2517,7 +2604,7 @@ Search criteria:
 |------------|-----------|---------------|
 | Approve standard | $8M amortizing | Not recommended as clean path |
 | Approve reduced hold | $6.5M | Viable |
-| Approve staged structure | $6.5M + $1.5M accordion | Strongest balance |
+| Approve staged structure | 6.5M + 1.5M accordion | Strongest balance |
 | Approve full request with IO | $8M + 12-month IO | Transitional, but cliff risk |
 | Defer | Revisit after next quarter | Conservative |
 | Decline | No exposure | Cleanest risk exit |
@@ -2535,7 +2622,7 @@ Search criteria:
 > Handing over to Credit Committee... 
 
 ---
-
+      
 **STEP 12 — HUMAN CREDIT COMMITTEE REVIEW** 
 
 <br>
@@ -2548,7 +2635,7 @@ Search criteria:
 
 - Approve $8M standard  
 - Approve reduced $6.5M hold  
-- Approve $6.5M + $1.5M accordion  
+- Approve 6.5M + 1.5M accordion  
 - Approve $8M with 12-month interest-only + guarantee  
 - Defer pending stronger quarter  
 - Decline  
@@ -2621,11 +2708,11 @@ Search criteria:
 | Insert | Enhanced monitoring conditions |
 | Generate | Word / PDF artefacts |
 
-**ON-SCREEN ARTEFACT 1 — CONDITIONAL CREDIT APPROVAL MEMORANDUM** 
+**ON-SCREEN ARTEFACTS**
 
-<br>
+<details>
+  <summary>ON-SCREEN ARTEFACT 1 - CONFIDENTIAL CREDIT APPROVAL MEMORANDUM</summary>
 
-**CONFIDENTIAL CREDIT APPROVAL MEMORANDUM** 
 
 | **Item** | **Details** |
 |----------|-------------|
@@ -2658,19 +2745,17 @@ Search criteria:
 
 **Recommendation / Decision:** Approve modified structure. Do not approve original $8M standard amortizing request. 
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_1.pdf">On-Screen_Artefact_1.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 2 — MODIFIED COMMITMENT LETTER** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 2 - COMMITMENT LETTER</summary>
 
-<br>
 
-**COMMITMENT LETTER** 
+## Date: 01 May 2026 
 
-Date: 01 May 2026 
-
-To: Vector Aero Components, LLC 
+### To: Vector Aero Components, LLC 
 
 The Bank is prepared to extend credit facilities to Vector Aero Components, LLC, subject to definitive documentation and satisfaction of the conditions below. 
 
@@ -2708,15 +2793,13 @@ Accordion may be made available only if:
 - Accuracy of representations  
 - No material adverse change  
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_2.pdf">On-Screen_Artefact_2.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 3 — ACCORDION TRIGGER SCHEDULE** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 3 - ACCORDION TRIGGER SCHEDULE</summary>
 
-<br>
-
-**ACCORDION TRIGGER SCHEDULE** 
 
 | **Trigger** | **Required Level** | **Evidence Source** | **Test Timing** |
 |-------------|--------------------|-------------------|-----------------|
@@ -2729,15 +2812,12 @@ Accordion may be made available only if:
 
 **Release Decision:** Accordion release is not automatic. It requires review by Credit Officer after all triggers are satisfied. 
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_3.pdf">On-Screen_Artefact_3.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 4 — LIMITED GUARANTEE AGREEMENT SUMMARY** 
-
-<br>
-
-**LIMITED GUARANTEE AGREEMENT SUMMARY** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 4 - LIMITED GUARANTEE AGREEMENT</summary> 
 
 | **Item** | **Detail** |
 |----------|-------------|
@@ -2758,15 +2838,12 @@ Accordion may be made available only if:
 - Customer concentration  
 - heightened sector uncertainty  
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_4.pdf">On-Screen_Artefact_4.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 5 — MONTHLY REPORTING COVENANT PACK** 
-
-<br>
-
-**MONTHLY REPORTING COVENANT PACK** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 5 - MONTHLY REPORTING COVENANT PACK</summary>
 
 Borrower shall provide the following until downgraded to standard monitoring by the Bank. 
 
@@ -2785,15 +2862,12 @@ Borrower shall provide the following until downgraded to standard monitoring by 
 - suspension of accordion availability  
 - watchlist consideration  
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_5.pdf">On-Screen_Artefact_5.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 6 — SECURITY AGREEMENT SUMMARY** 
-
-<br>
-
-**SECURITY AGREEMENT SUMMARY** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 6 - SECURITY AGREEMENT SUMMARY</summary>
 
 As continuing collateral security for all obligations, Borrower grants the Bank a first priority security interest in financed CNC machinery, automation equipment, replacements, proceeds, and insurance proceeds. 
 
@@ -2807,15 +2881,13 @@ As continuing collateral security for all obligations, Borrower grants the Bank 
 
 **Collateral Note:** Collateral is acceptable but specialized. Recovery value may be sensitive to secondary market conditions. 
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_6.pdf">On-Screen_Artefact_6.pdf</a>
 
-<br>
+</details>
 
-**ON-SCREEN ARTEFACT 7 — BOOKING INSTRUCTION SHEET** 
+<details>
+  <summary>ON-SCREEN ARTEFACT 7 - BOOKING INSTRUCTION SHEET</summary>
 
-<br>
-
-**BOOKING INSTRUCTION SHEET** 
 
 | **Field** | **Value** |
 |-----------|-----------|
@@ -2832,9 +2904,9 @@ As continuing collateral security for all obligations, Borrower grants the Bank 
 | Guarantee flag | Yes |
 | Accordion auto-release | No — credit review required |
 
-📄 Export: Word / PDF 
+📄 **Export: Word / PDF:** <a href="https://drive.google.com/uc?export=download&id=10pzimFb2rkN5LjTlktIz8DdMTBYCsQV5" download="On-Screen_Artefact_7.pdf">On-Screen_Artefact_7.pdf</a>
 
-<br>
+</details>
 
 **DOCUMENTATION DECISION SIGNALS** 
 
@@ -2983,23 +3055,23 @@ As continuing collateral security for all obligations, Borrower grants the Bank 
 
 | **Date** | **Step** | **Event** | **Decision / Output** | **Owner** |
 |----------|----------|-----------|----------------------|-----------|
-| 27 Apr 2026 | Intake | Application received | Accepted | Intake Agent |
-| 27 Apr 2026 | Plan Resolution | Base plan selected | US MM Equipment Finance v4.2 | Plan Resolution Agent |
-| 27 Apr 2026 | Plan Resolution | Fact-led specialist modules attached | Concentration / Demand / Media / Structuring | Plan Resolution Agent |
-| 28 Apr 2026 | Compliance | KYC / AML cleared | Proceed with media disclosure | Compliance Agent |
-| 28 Apr 2026 | Media Review | Civil litigation classified | Moderate governance flag | Adverse Media Agent |
-| 29 Apr 2026 | Spreading | Financials spread | FCCR 1.18x, LTV 79% | Financial Spreading Agent |
-| 29 Apr 2026 | 5C | Scorecard completed | Raw Score 3.85, Grade 5 indicative | Borrower Assessment Agent |
-| 30 Apr 2026 | Concentration | Stress test completed | Weak downside resilience | Stress Agent |
-| 30 Apr 2026 | Demand Outlook | Sector analysis completed | Demand survives, margin risk high | Demand Outlook Agent |
-| 30 Apr 2026 | Replanner | Original path failed approval objective | Replanner activated | Replanner Agent |
-| 30 Apr 2026 | Structuring | Alternatives generated | Option E strongest balance | Structuring Agent |
-| 01 May 2026 | Pricing | Options priced | Option E at SOFR +245 bps | Pricing Agent |
-| 01 May 2026 | HITL | Committee reviewed decision pack | Modified approval | Credit Committee |
-| 01 May 2026 | Documentation | Conditional documents generated | v1.0 Word / PDF | Documentation Agent |
-| 03 May 2026 | Closing | Guarantee + security completed | Ready to fund | Closing Agent |
-| 05 May 2026 | Funding | Initial tranche funded | $6.5M released | Closing Agent |
-| Ongoing | Monitoring | Enhanced monitoring active | Monthly review | Monitoring Agent |
+| 16 Apr 2026 | Intake | Application received | Accepted | Intake Agent |
+| 16 Apr 2026 | Plan Resolution | Base plan selected | US MM Equipment Finance v4.2 | Plan Resolution Agent |
+| 16 Apr 2026 | Plan Resolution | Fact-led specialist modules attached | Concentration / Demand / Media / Structuring | Plan Resolution Agent |
+| 17 Apr 2026 | Compliance | KYC / AML cleared | Proceed with media disclosure | Compliance Agent |
+| 17 Apr 2026 | Media Review | Civil litigation classified | Moderate governance flag | Adverse Media Agent |
+| 18 Apr 2026 | Spreading | Financials spread | FCCR 1.18x, LTV 79% | Financial Spreading Agent |
+| 18 Apr 2026 | 5C | Scorecard completed | Raw Score 3.85, Grade 5 indicative | Borrower Assessment Agent |
+| 19 Apr 2026 | Concentration | Stress test completed | Weak downside resilience | Stress Agent |
+| 19 Apr 2026 | Demand Outlook | Sector analysis completed | Demand survives, margin risk high | Demand Outlook Agent |
+| 19 Apr 2026 | Replanner | Original path failed approval objective | Replanner activated | Replanner Agent |
+| 19 Apr 2026 | Structuring | Alternatives generated | Option E strongest balance | Structuring Agent |
+| 20 Apr 2026 | Pricing | Options priced | Option E at SOFR +245 bps | Pricing Agent |
+| 20 Apr 2026 | HITL | Committee reviewed decision pack | Modified approval | Credit Committee |
+| 20 Apr 2026 | Documentation | Conditional documents generated | v1.0 Word / PDF | Documentation Agent |
+| 22 Apr 2026 | Closing | Guarantee + security completed | Ready to fund | Closing Agent |
+| 24 Apr 2026 | Funding | Initial tranche funded | $6.5M released | Closing Agent |
+| Ongoing  | Monitoring | Enhanced monitoring active | Monthly review | Monitoring Agent |
 
 **DECISION EXPLAINABILITY SNAPSHOT** 
 
@@ -3059,11 +3131,7 @@ As continuing collateral security for all obligations, Borrower grants the Bank 
 | Kaya value | Deterministic decision support + restructuring |
 | Monitoring | Enhanced monthly |
 | Auditability | Full replayable |
-
-Kaya did not auto-approve a weak structure. 
-Kaya did not simply hand the problem to humans. 
-Kaya converted a weak original request into a structured, evidence-backed committee decision. 
-`,
-    },
+`
+    }
   ])
 );
